@@ -1,0 +1,12 @@
+sphinx
+sphinx-argparse
+sphinx-rtd-theme
+sphinx-sitemap
+sphinxcontrib-applehelp
+sphinxcontrib-devhelp
+sphinxcontrib-htmlhelp
+sphinxcontrib-jsmath
+sphinxcontrib-qthelp
+sphinxcontrib-serializinghtml
+recommonmark
+nbsphinx
