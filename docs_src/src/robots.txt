@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://ATB-UQ.github.io/atb_docks/sitemap.xml
