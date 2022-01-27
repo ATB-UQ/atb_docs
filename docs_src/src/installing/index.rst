@@ -40,17 +40,6 @@ Running an instance
     docker run -d -p 8080:80 --name atb-server -v atbvol:/atb atb
 
 
-
-
-.. list-table::
-   :widths: 10 10
-   :header-rows: 1
-
-   * - ATB Release
-     - Version
-   * - 1
-     - 3.0.0
-
 Installing ATB Docker Instance from Docker Hub
 ------------------------------
 Once docker is installed, ensure you have access to the ATB Docker Hub repository.  Then pull the image from the repository using the following command:
