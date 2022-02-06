@@ -2,24 +2,31 @@
 ATB: Docker Version
 ********
 
-Documentation for installing, running and updating the ATB docker container.
 
-The ATB provides classical molecular force fields for novel compounds. Applications include:
+-------------------
+The ATB
+-------------------
 
-- The study of biomolecule:ligand complexes
+The ATB automates the generation of classical molecular force field parameters for user-submitted compounds.  Specifically, the ATB provides:
+
+
+- Access to classical force fields in formats compatible with GROMACS, GROMOS and LAMMPS simulation packages and CNS, Phenix, CCP4, Refmac5 and CYANA X-ray and NMR refinement packages
+- A GROMOS to AMBER topology file converter
+- Optimised geometries for molecules in the database
+
+These can be used in a wide range of applications:
+
+- Studying biomolecule-ligand complexes
 - Structure-based drug design
 - Material engineering
-- The refinement of x-ray crystal complexes
+- Refinement of x-ray crystal complexes
 
 -------------------
-This site provides:
+Docker Version
 -------------------
 
-- Access to classical force fields in formats compatible with GROMACS, GROMOS and LAMMPS simulation packages and CNS,
-Phenix, CCP4, Refmac5 and CYANA X-ray and NMR refinement packages.
-
-- A GROMOS to AMBER topology file converter.
-- Optimised geometries for molecules within the repository.
+The Docker version of the ATB allows a user to deploy the ATB web interface and processing pipelines on a server for internal organizational use.  
+This document explains the procedure for installing, running, and updating the Docker version of the ATB.
 
 
 .. toctree::
