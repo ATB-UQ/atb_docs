@@ -33,8 +33,18 @@ This document explains the procedure for installing, running, and updating the D
    :caption: Getting started
    :maxdepth: 1
 
-   installing/index
-   running/index
+   install-docker/index
+   install-container/index
+   install-run/index
+   
+.. toctree::
+   :caption: Using the ATB
+   :maxdepth: 1
+
+   running-login/index
+   running-submit/index
+   running-searching/index
+   
 
 .. toctree::
    :caption: About
