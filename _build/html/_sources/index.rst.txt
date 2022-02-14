@@ -22,7 +22,6 @@ This document explains the procedure for installing, running, and updating this 
    pages/pulling_running.rst
    pages/gamess_injection.rst
    pages/using_atb.rst
-.. pages/modifying_updating.rst
 
 .. toctree::
    :maxdepth: -1

@@ -20,7 +20,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Installation" href="installing_docker.html" />
+    <link rel="next" title="Installing Docker" href="installing_docker.html" />
     <link rel="prev" title="ATB - Containerized Version" href="../index.html" /> 
 </head>
 
@@ -40,7 +40,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Prerequisites</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#gamess">GAMESS</a></li>
@@ -50,11 +50,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#system-environment">System Environment</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_running.html">Logging In</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_running.html#pulling-the-container">Pulling the Container</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_running.html#running-the-container">Running the Container</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gamess_injection.html">Injecting GAMESS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installing Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_running.html">Installing and Starting the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gamess_injection.html">Installing GAMESS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_atb.html">Using the ATB</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
@@ -89,21 +91,29 @@
 <h2>GAMESS<a class="headerlink" href="#gamess" title="Permalink to this headline"></a></h2>
 <p>A downloaded copy of <a class="reference external" href="https://www.msg.chem.iastate.edu/gamess/">GAMESS</a> is required to use ATB - Containerized Version.</p>
 <p>As per the <a class="reference external" href="https://www.msg.chem.iastate.edu/gamess/License_Agreement.html">GAMESS User License Agreement</a>, GAMESS may not be redistributed.</p>
-<p>Please request a copy of GAMESS here by entering an e-mail address and selecting any of the Source Code Distributions.  A link will then be sent to you with download instructions.</p>
+<p>Please request a copy of GAMESS from: <a class="reference external" href="https://www.msg.chem.iastate.edu/gamess/License_Agreement.html">Download GAMESS</a>. You can select any of the Source Code Distributions.
+A link will then be sent to you with download instructions.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>It may take up to several days to receive an e-mail with the GAMESS download link.</p>
+<p>It may take several days to receive an e-mail with the GAMESS download link.</p>
 </div>
-<p>Once you have received the e-mail link, download the archive and note its location as it will be needed during installation.  The provided archive should not be extracted.</p>
+<p>Once you have received the e-mail link, download the archive and note its location as it will be needed during installation.  The provided archive does not require extraction.</p>
 </section>
 <section id="docker-hub-account">
 <h2>Docker Hub Account<a class="headerlink" href="#docker-hub-account" title="Permalink to this headline"></a></h2>
-<p>ATB - Containerized Version is distributed through <a class="reference external" href="https://hub.docker.com/">Docker Hub</a>.  In order to access the container images referenced later in the installation procedure, your organization must first have <a class="reference external" href="https://hub.docker.com/">created a Docker Hub account</a> and contacted the ATB to request access to the repository containing your organization-specific container image.</p>
-<p>Note the name of this repository, as it will be required later in the installation procedure.</p>
+<p>The preferred distribution method for the ATB - Containerized Version is through <a class="reference external" href="https://hub.docker.com/">Docker Hub</a>, however, a tar file can be provided if required.</p>
+<p>In order to access the container images referenced later in the installation procedure, you will need to have access to a Docker Hub account:
+<a class="reference external" href="https://hub.docker.com/">created a Docker Hub account</a>.
+You will need to provide these account details to an ATB contact so that access can be grated to the repository containing your organization-specific container image.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The name of your organization-specific container image will be required later in the installation procedure.</p>
+</div>
 </section>
 <section id="atb-server-credentials">
 <h2>ATB Server Credentials<a class="headerlink" href="#atb-server-credentials" title="Permalink to this headline"></a></h2>
-<p>Along with access to the appropriate Docker Hub repository, your organization should have been provided with a container-specific set of administrator credentials for accessing the web interface of ATB - Containerized Version after deployment.</p>
+<p>Along with access to the appropriate Docker Hub repository, your organization should have been provided with a
+container-specific set of administrator credentials for accessing admin features on the web interface of the ATB - Containerized Version after deployment.</p>
 <p>If you are not sure if your organization has received these credentials, please contact the ATB.</p>
 </section>
 <section id="system-resource-requirements">
@@ -120,12 +130,16 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Additional resources may be required to perform certain operations when running ATB - Containerized Version after installation.</p>
+<p>Additional resources may be required to perform certain operations when running ATB - Containerized Version after installation.
+The ATB - Containerized Version runs computationally intensive quantum mechanical calculations with GAMESS on the host hardware.
+Parallelisation testing on typical ATB jobs has found GAMESS to be over 90% efficient on up to 48 CPU (results will depend on molecule size).
+Note that memory requirements scale with the size of the molecules being processed and insufficient memory allocation will result in a processing failure; 3 GB per CPU core is recommended.</p>
 </div>
 </section>
 <section id="system-environment">
 <h2>System Environment<a class="headerlink" href="#system-environment" title="Permalink to this headline"></a></h2>
-<p>The installation procedure for ATB - Containerized Version involves the use of <a class="reference external" href="https://docs.docker.com/engine/">Docker Engine</a>.  Docker Engine is presently available only for Linux.</p>
+<p>The current installation procedure for ATB - Containerized Version is limited to the use of <a class="reference external" href="https://docs.docker.com/engine/">Docker Engine</a> which is presently available only for Linux.</p>
+<p>The ATB - Containerized Version can be easily installed with Docker Desktop, however, a paid subscription will be required for most organisations: <a class="reference external" href="https://www.docker.com/pricing">Docker Pricing</a>.</p>
 <p>Users wishing to run ATB - Containerized Version on Windows should follow the subsequent installation instructions from within <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/">WSL</a>.</p>
 <p>Users of other operating systems should configure a type-2 hypervisor running <a class="reference external" href="https://docs.docker.com/engine/install/">a supported Linux distribution</a> before proceeding.</p>
 </section>
@@ -136,7 +150,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="ATB - Containerized Version" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="installing_docker.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="installing_docker.html" class="btn btn-neutral float-right" title="Installing Docker" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -14,3 +14,6 @@ Then run the following command to build GAMESS inside the running ATB container:
 .. code-block:: bash
 
     docker exec atb-server /build_GAMESS.sh 
+
+.. note::
+    Building GAMESS will take between 15-20 min.
