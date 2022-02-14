@@ -79,3 +79,9 @@ html_theme_options = {
     'titles_only': False
 }
 
+html_context = {
+    'display_github': True,
+    'github_user': 'ATB-UQ',
+    'github_repo': 'atb_docs',
+    'github_version': 'main/docs_src/src/'
+}
