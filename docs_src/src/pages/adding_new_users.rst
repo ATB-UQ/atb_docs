@@ -11,7 +11,7 @@ This can be done by navigating to the \"Register\" tab of the top navigation men
 .. note::
     This tab will only be visible if you are logged out.
     
-Select "Academic" for your intended use of the ATB from the drop-down menu.
+Select \"Academic\" for your intended use of the ATB from the drop-down menu.
 
 .. note::
     The distinction between academic and commercial users originates from the live ATB server and only functions vestigially on ATB - Containerized Version.  Registering as an academic user is recommended for the sole purpose of streamlining the account creation process.
