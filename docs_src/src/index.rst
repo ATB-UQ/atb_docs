@@ -17,12 +17,17 @@ This document explains the procedure for installing, running, and updating this 
    :maxdepth: -1
    :caption: Getting Started
    
-   pages/pre-install-checklist.rst
+   pages/pre-install_checklist.rst
    pages/installing_docker.rst
    pages/pulling_running.rst
    pages/gamess_injection.rst
-   pages/using_atb.rst
+   pages/initializing_server.rst
 
+.. toctree::
+   :maxdepth: -1
+   :caption: Administrative Tasks
+   pages/adding_new_users.rst
+   
 .. toctree::
    :maxdepth: -1
    :caption: About
