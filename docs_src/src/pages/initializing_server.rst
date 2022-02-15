@@ -1,5 +1,5 @@
-Initializing the ATB Server
-===========================
+Initializing the ATB Database
+=============================
 
 After building GAMESS, the ATB server database must be initialized before many functions of the site can be used.
 
@@ -23,7 +23,7 @@ ATB - Containerized Version as provided in the container is is provided with an 
 - Coordinates: 4 - Paste PDB
 - Visibility: Public
 
-In the field provided for pasting a PDB structure, paste the following PDB structure for methane with pre-optimized geometry.
+In the field provided for pasting a PDB structure, paste the following PDB structure for methane with pre-optimized geometry:
 
 .. code-block::
 
@@ -41,6 +41,8 @@ In the field provided for pasting a PDB structure, paste the following PDB struc
 .. note::
     You can submit any structure to initialize the database.  This example has been chosen as it is small and already has optimized geometry, both of which reduce computational time.
     
-Click \"Next\" to to submit your molecule.  After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.   
+Click \"Next\" to to submit your molecule.  
+
+After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.   
 
 You can monitor the progress of your submitted molecule (as well as all other notifications that are typically delivered via e-mail on the live ATB server) from the \"Notifications\" tab of the Admin drop-down interface: http://localhost:8080/index.py?tab=notifications

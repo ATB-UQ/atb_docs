@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Initializing the ATB Server &mdash; ATB - Containerized Version | Documentation 3.0.0-rc.1 documentation</title>
+  <title>Initializing the ATB Database &mdash; ATB - Containerized Version | Documentation 3.0.0-rc.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
@@ -46,7 +46,7 @@
 <li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installing Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_running.html">Installing and Starting the ATB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gamess_injection.html">Installing GAMESS</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Initializing the ATB Server</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Initializing the ATB Database</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#logging-in-as-administrator">Logging in as Administrator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#submitting-your-first-molecule">Submitting Your First Molecule</a></li>
 </ul>
@@ -75,7 +75,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Initializing the ATB Server</li>
+      <li>Initializing the ATB Database</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/ATB-UQ/atb_docs/blob/main/docs_src/src/pages/initializing_server.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -85,8 +85,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="initializing-the-atb-server">
-<h1>Initializing the ATB Server<a class="headerlink" href="#initializing-the-atb-server" title="Permalink to this headline"></a></h1>
+  <section id="initializing-the-atb-database">
+<h1>Initializing the ATB Database<a class="headerlink" href="#initializing-the-atb-database" title="Permalink to this headline"></a></h1>
 <p>After building GAMESS, the ATB server database must be initialized before many functions of the site can be used.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -106,7 +106,7 @@
 <li><p>Coordinates: 4 - Paste PDB</p></li>
 <li><p>Visibility: Public</p></li>
 </ul>
-<p>In the field provided for pasting a PDB structure, paste the following PDB structure for methane with pre-optimized geometry.</p>
+<p>In the field provided for pasting a PDB structure, paste the following PDB structure for methane with pre-optimized geometry:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">HETATM</span>    <span class="mi">1</span>   <span class="n">H5</span> <span class="n">METH</span>    <span class="mi">0</span>       <span class="mf">0.904</span>   <span class="mf">0.005</span>  <span class="o">-</span><span class="mf">0.617</span>  <span class="mf">1.00</span>  <span class="mf">0.00</span>           <span class="n">H</span>
 <span class="n">HETATM</span>    <span class="mi">2</span>   <span class="n">C1</span> <span class="n">METH</span>    <span class="mi">0</span>      <span class="o">-</span><span class="mf">0.000</span>  <span class="o">-</span><span class="mf">0.000</span>   <span class="mf">0.000</span>  <span class="mf">1.00</span>  <span class="mf">0.00</span>           <span class="n">C</span>
 <span class="n">HETATM</span>    <span class="mi">3</span>   <span class="n">H2</span> <span class="n">METH</span>    <span class="mi">0</span>      <span class="o">-</span><span class="mf">0.010</span>   <span class="mf">0.888</span>   <span class="mf">0.638</span>  <span class="mf">1.00</span>  <span class="mf">0.00</span>           <span class="n">H</span>
@@ -123,7 +123,8 @@
 <p class="admonition-title">Note</p>
 <p>You can submit any structure to initialize the database.  This example has been chosen as it is small and already has optimized geometry, both of which reduce computational time.</p>
 </div>
-<p>Click &quot;Next&quot; to to submit your molecule.  After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.</p>
+<p>Click &quot;Next&quot; to to submit your molecule.</p>
+<p>After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.</p>
 <p>You can monitor the progress of your submitted molecule (as well as all other notifications that are typically delivered via e-mail on the live ATB server) from the &quot;Notifications&quot; tab of the Admin drop-down interface: <a class="reference external" href="http://localhost:8080/index.py?tab=notifications">http://localhost:8080/index.py?tab=notifications</a></p>
 </section>
 </section>
