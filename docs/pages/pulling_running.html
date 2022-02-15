@@ -40,9 +40,9 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="pre-install-checklist.html">Installation Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pre-install_checklist.html">Installation Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installing Docker</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installing and Starting the ATB</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#logging-in">Logging In</a></li>
@@ -51,9 +51,13 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="gamess_injection.html">Installing GAMESS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_atb.html">Using the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initializing_server.html">Initializing the ATB Server</a></li>
 </ul>
-<p class="caption"><span class="caption-text">About</span></p>
+<p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
@@ -107,12 +111,14 @@
 </pre></div>
 </div>
 <p>Again, remember to replace <code class="docutils literal notranslate"><span class="pre">YOUREPO</span></code> with the full name of your organization-specific repository.</p>
-<p>An instance of the container should now be running.  Additional steps, however, must be completed for the local ATB server to function properly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Some of the arguments in the example <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> command above are optional: these include the host port (8080), container name (atb-server) and volume name (atbvol).
-Note that to store ATB server data in a volume you must mount the volume in the location <code class="docutils literal notranslate"><span class="pre">/atb</span></code>.</p>
+<p>Some of the arguments in the <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> command above can be modified if needed.  These include the host port (8080), container name (atb-server) and volume name (atbvol).</p>
+<p>Please note that the volume stil must be mounted in the location <code class="docutils literal notranslate"><span class="pre">/atb</span></code> irrespective of the volume name chosen.</p>
 </div>
+<p>An instance of the container should now be running.  Verify this by navigating to <a class="reference external" href="http://localhost:8080/">http://localhost:8080/</a> in a web browser (assuming you used the default port number shown in the example above).</p>
+<p>If you can see the ATB home page, the container has been successfully launched.</p>
+<p>Additional steps, however, must be completed for the local ATB server to function properly.</p>
 </section>
 </section>
 

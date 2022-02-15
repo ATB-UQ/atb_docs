@@ -38,15 +38,19 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="pre-install-checklist.html">Installation Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pre-install_checklist.html">Installation Prerequisites</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installing Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_running.html">Installing and Starting the ATB</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gamess_injection.html">Installing GAMESS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_atb.html">Using the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initializing_server.html">Initializing the ATB Server</a></li>
 </ul>
-<p class="caption"><span class="caption-text">About</span></p>
+<p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
@@ -91,11 +95,7 @@ command:</p>
 </section>
 <section id="updating-a-container">
 <h1>Updating a container<a class="headerlink" href="#updating-a-container" title="Permalink to this headline"></a></h1>
-<dl class="simple">
-<dt>Updates to the container will be hosted on docker-hub and you can pull the image as so (this is private so you’ll need</dt><dd><p>a login). Note, your changes if you have updated your container (e.g. with users, or molecules) will be overridden in</p>
-</dd>
-</dl>
-<p>this update.</p>
+<p>Updates to the container will be hosted on docker-hub and you can pull the image as so (this is private so you’ll need a login). Note, your changes if you have updated your container (e.g. with users, or molecules) will be overridden in this update.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">pull</span> <span class="n">atb_docker</span>
 </pre></div>
 </div>

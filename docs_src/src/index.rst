@@ -26,6 +26,7 @@ This document explains the procedure for installing, running, and updating this 
 .. toctree::
    :maxdepth: -1
    :caption: Administrative Tasks
+   
    pages/adding_new_users.rst
    
 .. toctree::

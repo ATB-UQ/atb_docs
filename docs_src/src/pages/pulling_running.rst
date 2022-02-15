@@ -37,8 +37,11 @@ Again, remember to replace ``YOUREPO`` with the full name of your organization-s
 
 .. note::
     Some of the arguments in the ``docker run`` command above can be modified if needed.  These include the host port (8080), container name (atb-server) and volume name (atbvol).
+    
     Please note that the volume stil must be mounted in the location ``/atb`` irrespective of the volume name chosen.
 
-An instance of the container should now be running.  Verify this by navigating to http://localhost:8080/ (assuming you used the default port number shown in the example above) in a web browser.  If you can see the ATB home page, the container has been successfully launched.  
+An instance of the container should now be running.  Verify this by navigating to http://localhost:8080/ in a web browser (assuming you used the default port number shown in the example above).  
+
+If you can see the ATB home page, the container has been successfully launched.  
 
 Additional steps, however, must be completed for the local ATB server to function properly.  

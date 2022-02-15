@@ -23,9 +23,7 @@ If you want to run both at the same time you would need to use a different port 
 Updating a container
 --------------------
 
-Updates to the container will be hosted on docker-hub and you can pull the image as so (this is private so you'll need
- a login). Note, your changes if you have updated your container (e.g. with users, or molecules) will be overridden in
-this update.
+Updates to the container will be hosted on docker-hub and you can pull the image as so (this is private so you'll need a login). Note, your changes if you have updated your container (e.g. with users, or molecules) will be overridden in this update.
 
 .. code-block:: python
 
