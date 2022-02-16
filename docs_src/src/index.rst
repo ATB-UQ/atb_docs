@@ -35,10 +35,3 @@ This document explains the procedure for installing, running, and updating this 
    
    pages/references.rst
    
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
