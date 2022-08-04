@@ -39,7 +39,7 @@ In the field provided for pasting a PDB structure, paste the following PDB struc
     CONECT    5    2
 
 .. note::
-    You can submit any structure to initialize the database.  This example has been chosen as it is small and already has optimized geometry, both of which reduce computational time.
+    You can submit any structure to initialize the database.  This includes using the JME biulder. Methane has been provided as an example as it is a small molecules and the coordinates correspond to an optimized geometry. This reduces the processing time.
     
 Click \"Next\" to to submit your molecule.  
 

@@ -16,6 +16,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -56,6 +57,8 @@
 <p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html#updating-atb-containerized-version">Updating ATB - Containerized Version</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -87,9 +90,9 @@
            <div itemprop="articleBody">
              
   <section id="installing-and-starting-the-atb">
-<h1>Installing and Starting the ATB<a class="headerlink" href="#installing-and-starting-the-atb" title="Permalink to this headline"></a></h1>
+<h1>Installing and Starting the ATB<a class="headerlink" href="#installing-and-starting-the-atb" title="Permalink to this heading"></a></h1>
 <section id="logging-in">
-<h2>Logging In<a class="headerlink" href="#logging-in" title="Permalink to this headline"></a></h2>
+<h2>Logging In<a class="headerlink" href="#logging-in" title="Permalink to this heading"></a></h2>
 <p>Once docker is installed, use the following command to log into the Docker Hub account linked to the organization-specific repository provided by the ATB:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker login
 </pre></div>
@@ -97,7 +100,7 @@
 <p>Supply your Docker Hub username and password when prompted.</p>
 </section>
 <section id="pulling-the-container">
-<h2>Pulling the Container<a class="headerlink" href="#pulling-the-container" title="Permalink to this headline"></a></h2>
+<h2>Pulling the Container<a class="headerlink" href="#pulling-the-container" title="Permalink to this heading"></a></h2>
 <p>Once logged in, pull the ATB container image from your organization-specific repository:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull YOURREPO
 </pre></div>
@@ -105,7 +108,7 @@
 <p>Replace <code class="docutils literal notranslate"><span class="pre">YOUREPO</span></code> with the full name of your organization-specific repository provided by the ATB. The full name should be in the format <code class="docutils literal notranslate"><span class="pre">UPLOADERNAME/REPONAME</span></code>.</p>
 </section>
 <section id="starting-the-container">
-<h2>Starting the Container<a class="headerlink" href="#starting-the-container" title="Permalink to this headline"></a></h2>
+<h2>Starting the Container<a class="headerlink" href="#starting-the-container" title="Permalink to this heading"></a></h2>
 <p>Now that the container has been pulled from the repository, start an instance of it using the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -d -p <span class="m">8080</span>:80 --name atb-server -v atbvol:/atb YOUREPO
 </pre></div>

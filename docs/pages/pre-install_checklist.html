@@ -16,6 +16,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,6 +59,8 @@
 <p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html#updating-atb-containerized-version">Updating ATB - Containerized Version</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -89,10 +92,10 @@
            <div itemprop="articleBody">
              
   <section id="installation-prerequisites">
-<h1>Installation Prerequisites<a class="headerlink" href="#installation-prerequisites" title="Permalink to this headline"></a></h1>
+<h1>Installation Prerequisites<a class="headerlink" href="#installation-prerequisites" title="Permalink to this heading"></a></h1>
 <p>Before beginning installation, ensure that the following prerequisites are met:</p>
 <section id="gamess">
-<h2>GAMESS<a class="headerlink" href="#gamess" title="Permalink to this headline"></a></h2>
+<h2>GAMESS<a class="headerlink" href="#gamess" title="Permalink to this heading"></a></h2>
 <p>A downloaded copy of <a class="reference external" href="https://www.msg.chem.iastate.edu/gamess/">GAMESS</a> is required to use ATB - Containerized Version.</p>
 <p>As per the <a class="reference external" href="https://www.msg.chem.iastate.edu/gamess/License_Agreement.html">GAMESS User License Agreement</a>, GAMESS may not be redistributed.</p>
 <p>Please request a copy of GAMESS from <a class="reference external" href="https://www.msg.chem.iastate.edu/GAMESS/download/register/">the GAMESS Registration System</a> after reviewing the license agreement. You can select any of the Source Code Distribution options.
@@ -104,7 +107,7 @@ A link will then be sent to you with download instructions.</p>
 <p>Once you have received the e-mail link, download the archive and note its location as it will be needed during installation.  The provided archive does not require extraction.</p>
 </section>
 <section id="docker-hub-account">
-<h2>Docker Hub Account<a class="headerlink" href="#docker-hub-account" title="Permalink to this headline"></a></h2>
+<h2>Docker Hub Account<a class="headerlink" href="#docker-hub-account" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The preferred distribution method for the ATB - Containerized Version is through <a class="reference external" href="https://hub.docker.com/">Docker Hub</a>.</p>
@@ -120,12 +123,12 @@ A link will then be sent to you with download instructions.</p>
 </div>
 </section>
 <section id="atb-server-credentials">
-<h2>ATB Server Credentials<a class="headerlink" href="#atb-server-credentials" title="Permalink to this headline"></a></h2>
+<h2>ATB Server Credentials<a class="headerlink" href="#atb-server-credentials" title="Permalink to this heading"></a></h2>
 <p>Along with access to the appropriate Docker Hub repository, your organization should have been provided with a container-specific set of administrator credentials for accessing admin features on the web interface of the ATB - Containerized Version after deployment.</p>
 <p>If you are not sure if your organization has received these credentials, please contact the ATB.</p>
 </section>
 <section id="system-resource-requirements">
-<h2>System Resource Requirements<a class="headerlink" href="#system-resource-requirements" title="Permalink to this headline"></a></h2>
+<h2>System Resource Requirements<a class="headerlink" href="#system-resource-requirements" title="Permalink to this heading"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>ATB - Containerized Version presently only supports x86-64 architectures.</p>
@@ -146,7 +149,7 @@ Memory requirements also scale with the size of the molecules being processed.</
 </div>
 </section>
 <section id="system-environment">
-<h2>System Environment<a class="headerlink" href="#system-environment" title="Permalink to this headline"></a></h2>
+<h2>System Environment<a class="headerlink" href="#system-environment" title="Permalink to this heading"></a></h2>
 <p>The current installation procedure for ATB - Containerized Version is limited to the use of <a class="reference external" href="https://docs.docker.com/engine/">Docker Engine</a> which is presently available only for Linux and is distributed under an open-source license.</p>
 <p>The ATB - Containerized Version can alternatively be installed with Docker Desktop, however, this alternative will require a paid subscription for most organizations.  Licensing details for Docker Desktop are available here: <a class="reference external" href="https://www.docker.com/pricing">Docker Pricing</a>.</p>
 <p>Users wishing to run ATB - Containerized Version on Windows should follow the subsequent installation instructions from within <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/">WSL</a>.</p>

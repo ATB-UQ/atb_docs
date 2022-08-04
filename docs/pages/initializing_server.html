@@ -16,6 +16,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -55,6 +56,8 @@
 <p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html#updating-atb-containerized-version">Updating ATB - Containerized Version</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -86,19 +89,19 @@
            <div itemprop="articleBody">
              
   <section id="initializing-the-atb-database">
-<h1>Initializing the ATB Database<a class="headerlink" href="#initializing-the-atb-database" title="Permalink to this headline"></a></h1>
+<h1>Initializing the ATB Database<a class="headerlink" href="#initializing-the-atb-database" title="Permalink to this heading"></a></h1>
 <p>After building GAMESS, the ATB server database must be initialized before many functions of the site can be used.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Many critical aspects of the ATB web interface will not function correctly if the server is not initialized by submitting a molecule as described in these instructions.</p>
 </div>
 <section id="logging-in-as-administrator">
-<h2>Logging in as Administrator<a class="headerlink" href="#logging-in-as-administrator" title="Permalink to this headline"></a></h2>
+<h2>Logging in as Administrator<a class="headerlink" href="#logging-in-as-administrator" title="Permalink to this heading"></a></h2>
 <p>Access the web interface for the server from: <a class="reference external" href="http://localhost:8080/">http://localhost:8080/</a></p>
 <p>Navigate to the &quot;Login&quot; tab of the top navigation menu and enter your organization-specific administrator username (in the email address field) and password.</p>
 </section>
 <section id="submitting-your-first-molecule">
-<h2>Submitting Your First Molecule<a class="headerlink" href="#submitting-your-first-molecule" title="Permalink to this headline"></a></h2>
+<h2>Submitting Your First Molecule<a class="headerlink" href="#submitting-your-first-molecule" title="Permalink to this heading"></a></h2>
 <p>ATB - Containerized Version as provided in the container is is provided with an uninitialized (empty) database.  To submit your first molecule and initialize the database, navigate to the &quot;Submit&quot; tab of the top navigation menu and select the following options:</p>
 <ul class="simple">
 <li><p>Molecule type: heteromolecule</p></li>
@@ -121,7 +124,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can submit any structure to initialize the database.  This example has been chosen as it is small and already has optimized geometry, both of which reduce computational time.</p>
+<p>You can submit any structure to initialize the database.  This includes using the JME biulder. Methane has been provided as an example as it is a small molecules and the coordinates correspond to an optimized geometry. This reduces the processing time.</p>
 </div>
 <p>Click &quot;Next&quot; to to submit your molecule.</p>
 <p>After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.</p>

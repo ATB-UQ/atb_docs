@@ -16,6 +16,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -55,6 +56,8 @@
 <p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html#updating-atb-containerized-version">Updating ATB - Containerized Version</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -86,9 +89,9 @@
            <div itemprop="articleBody">
              
   <section id="installing-docker">
-<h1>Installing Docker<a class="headerlink" href="#installing-docker" title="Permalink to this headline"></a></h1>
+<h1>Installing Docker<a class="headerlink" href="#installing-docker" title="Permalink to this heading"></a></h1>
 <section id="installing-docker-engine">
-<h2>Installing Docker Engine<a class="headerlink" href="#installing-docker-engine" title="Permalink to this headline"></a></h2>
+<h2>Installing Docker Engine<a class="headerlink" href="#installing-docker-engine" title="Permalink to this heading"></a></h2>
 <p>ATB - Containerized Version uses <a class="reference external" href="https://docs.docker.com/engine/">Docker Engine</a> to both download and run the associated container.</p>
 <p>Distribution-specific instructions for installing Docker Engine are available <a class="reference external" href="https://docs.docker.com/engine/install/#server">from Docker</a>.</p>
 <div class="admonition warning">
@@ -102,7 +105,7 @@
 </div>
 </section>
 <section id="optional-configure-docker-to-be-managed-by-non-root-user">
-<h2>(Optional) Configure Docker to Be Managed by Non-Root User<a class="headerlink" href="#optional-configure-docker-to-be-managed-by-non-root-user" title="Permalink to this headline"></a></h2>
+<h2>(Optional) Configure Docker to Be Managed by Non-Root User<a class="headerlink" href="#optional-configure-docker-to-be-managed-by-non-root-user" title="Permalink to this heading"></a></h2>
 <p>As per the <a class="reference external" href="https://docs.docker.com/engine/install/linux-postinstall/">Docker Documentation</a>:</p>
 <blockquote>
 <div><p>The Docker daemon binds to a Unix socket instead of a TCP port. By default that Unix socket is owned by the user root and other users can only access it using sudo. The Docker daemon always runs as the root user.</p>

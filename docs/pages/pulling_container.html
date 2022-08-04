@@ -16,6 +16,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -49,6 +50,8 @@
 <p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html#updating-atb-containerized-version">Updating ATB - Containerized Version</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -80,7 +83,7 @@
            <div itemprop="articleBody">
              
   <section id="logging-in">
-<h1>Logging In<a class="headerlink" href="#logging-in" title="Permalink to this headline"></a></h1>
+<h1>Logging In<a class="headerlink" href="#logging-in" title="Permalink to this heading"></a></h1>
 <p>Once docker is installed, use the following command to log into the Docker Hub account linked to your organization-specific repository:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker login
 </pre></div>
@@ -88,7 +91,7 @@
 <p>Supply your Docker Hub username and password when prompted.</p>
 </section>
 <section id="pulling-the-container">
-<h1>Pulling the Container<a class="headerlink" href="#pulling-the-container" title="Permalink to this headline"></a></h1>
+<h1>Pulling the Container<a class="headerlink" href="#pulling-the-container" title="Permalink to this heading"></a></h1>
 <p>Once logged in, pull the ATB container image from your organization-specific repository.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull YOURREPO
 </pre></div>
@@ -104,7 +107,7 @@
 </div>
 </section>
 <section id="running-container">
-<h1>Running Container<a class="headerlink" href="#running-container" title="Permalink to this headline"></a></h1>
+<h1>Running Container<a class="headerlink" href="#running-container" title="Permalink to this heading"></a></h1>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> <span class="o">-</span><span class="n">p</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">80</span> <span class="o">--</span><span class="n">name</span> <span class="n">atb</span><span class="o">-</span><span class="n">server</span> <span class="o">-</span><span class="n">v</span> <span class="n">atbvol</span><span class="p">:</span><span class="o">/</span><span class="n">atb</span> <span class="n">atb</span>
 </pre></div>
 </div>

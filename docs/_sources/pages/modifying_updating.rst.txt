@@ -1,51 +1,44 @@
-Saving a container
-------------------
+Committing Changes to a Container
+---------------------------------
 
-If you are interested in commiting (saving) your changes to your docker instance you just need to run the following
-command:
+It may be desirable to save changes made to the filesystem of the container to a new image.  To do this, execute the following command:
 
-.. code-block:: python
+.. code-block:: bash
 
-    docker commit atb-server updated-atb-server
+    docker commit atb-server name-of-new-container
 
+Execution of this command will result in the current state of the **atb-server** container being saved to a new container named **name-of-new-container**.  This new container can be run using the same commands as used to run the **atb-server** container in any of the other instructions given in this documentation.
 
-This will save your updates to the container that was originally created **atb-server** to a new conatiner named
-**updated-atb-sever**. Now to run the new container you would run:
+Execute the following command to start the new container:
 
-.. code-block:: python
+.. code-block:: bash
 
-    docker run -d -p 8080:80 --name updated-atb-sever -v atbvol:/atb atb
+    docker run -d -p 8080:80 --name name-of-new-container -v atbvol:/atb atb
 
+To run two containers simultaneously, change the port binding (e.g. **8080** to **8181**) to ensure that conflicts do not exist between running containers.
 
-If you want to run both at the same time you would need to use a different port to **8080**, e.g. **8181**.
+Updating ATB - Containerized Version
+------------------------------------
 
+Updates to ATB - Containerized Version will be released on Docker Hub and can be pulled in the same manner described in Installing and Starting the ATB.  
 
-Updating a container
---------------------
-
-Updates to the container will be hosted on docker-hub and you can pull the image as so (this is private so you'll need a login). Note, your changes if you have updated your container (e.g. with users, or molecules) will be overridden in this update.
-
-.. code-block:: python
-
-    docker pull atb_docker
-
-
-If you have updated your container you will need to export your database (as **SQL**) before updating the container.
-You will then need to add this SQL to the updated container, this can be performed via the following two commands:
+.. Warning::
+    Pulling a new container will overwrite all modifications to the container (e.g. all user accounts, all submitted molecules).  To retain this information, it is     essential to export the relevant database first by following these instructions
 
 First make sure you have an instance of your **atb-server** running, then to export the database run:
 
-.. code-block:: python
+.. code-block:: bash
 
     docker exec atb-server /usr/bin/mysqldump -u root --password=THE_PASSWORD_WE_GAVE_YOU atb > backup_atb.sql
 
+Then, pull the updated container from Docker Hub using the following command:
 
-Now after pulling the new version of the docker instance, you need to insert the database back in using the following
-command:
+.. code-block:: bash
 
-.. code-block:: python
+    docker pull atb_docker
+
+Finally, after pulling the new version of the container, import the database from the backup:
+
+.. code-block:: bash
 
     docker exec atb-server  /usr/bin/mysql -u root --password=THE_PASSWORD_WE_GAVE_YOU atb < backup_atb.sql
-
-
-This should now all work. 
