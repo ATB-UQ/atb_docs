@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Committing Changes to a Container &mdash; ATB - Containerized Version | Documentation 3.0.0-rc.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/fav.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="References" href="references.html" />
+    <link rel="prev" title="Adding New Users" href="adding_new_users.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #333131" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pre-install_checklist.html">Installation Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installing Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_running.html">Installing and Starting the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gamess_injection.html">Installing GAMESS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initializing_server.html">Initializing the ATB Database</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Administrative Tasks</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#updating-atb-containerized-version">Updating ATB - Containerized Version</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #333131" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ATB - Containerized Version | Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Committing Changes to a Container</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ATB-UQ/atb_docs/blob/main/docs_src/src/pages/modifying_updating.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="committing-changes-to-a-container">
+<h1>Committing Changes to a Container<a class="headerlink" href="#committing-changes-to-a-container" title="Permalink to this heading"></a></h1>
+<p>It may be desirable to save changes made to the filesystem of the container to a new image.  To do this, execute the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker commit atb-server name-of-new-container
+</pre></div>
+</div>
+<p>Execution of this command will result in the current state of the <strong>atb-server</strong> container being saved to a new container named <strong>name-of-new-container</strong>.  This new container can be run using the same commands as used to run the <strong>atb-server</strong> container in any of the other instructions given in this documentation.</p>
+<p>Execute the following command to start the new container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -d -p <span class="m">8080</span>:80 --name name-of-new-container -v atbvol:/atb atb
+</pre></div>
+</div>
+<p>To run two containers simultaneously, change the port binding (e.g. <strong>8080</strong> to <strong>8181</strong>) to ensure that conflicts do not exist between running containers.</p>
+</section>
+<section id="updating-atb-containerized-version">
+<h1>Updating ATB - Containerized Version<a class="headerlink" href="#updating-atb-containerized-version" title="Permalink to this heading"></a></h1>
+<p>Updates to ATB - Containerized Version will be released on Docker Hub and can be pulled in the same manner described in Installing and Starting the ATB.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Pulling a new container will overwrite all modifications to the container (e.g. all user accounts, all submitted molecules).  To retain this information, it is     essential to export the relevant database first by following these instructions</p>
+</div>
+<p>First make sure you have an instance of your <strong>atb-server</strong> running, then to export the database run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker <span class="nb">exec</span> atb-server /usr/bin/mysqldump -u root --password<span class="o">=</span>THE_PASSWORD_WE_GAVE_YOU atb &gt; backup_atb.sql
+</pre></div>
+</div>
+<p>Then, pull the updated container from Docker Hub using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker pull atb_docker
+</pre></div>
+</div>
+<p>Finally, after pulling the new version of the container, import the database from the backup:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker <span class="nb">exec</span> atb-server  /usr/bin/mysql -u root --password<span class="o">=</span>THE_PASSWORD_WE_GAVE_YOU atb &lt; backup_atb.sql
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="adding_new_users.html" class="btn btn-neutral float-left" title="Adding New Users" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="references.html" class="btn btn-neutral float-right" title="References" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, ATB.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

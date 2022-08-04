@@ -13,13 +13,13 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
 project = 'ATB - Containerized Version | Documentation'
 copyright = '2022, ATB'
-author = 'Sharif Nada, Ariane Mora'
+author = 'Alan Mark, Ariane Mora, Sharif Nada, Martin Stroet'
 
 # The full version, including alpha/beta/rc tags
 release = '3.0.0-rc.1'
