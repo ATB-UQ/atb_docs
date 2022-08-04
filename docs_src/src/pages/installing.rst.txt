@@ -40,14 +40,14 @@ Installing ATB Docker Instance from File
 Once docker is installed, download the ATB docker tar, this is approximately 9.8Gb (a link to the tar file is provided
 when you buy a license with us, see our main `website <https://atb.uq.edu.au/>`_).
 
-.. code-block:: python
+.. code-block:: bash
 
     wget http://atb.uq.edu.au/example_link_to_docker_atb.tar
 
 
 Load the docker image (may take a few minutes).
 
-.. code-block:: python
+.. code-block:: bash
 
     docker load -i atb-docker.tar
 
@@ -55,7 +55,7 @@ Load the docker image (may take a few minutes).
 Running an instance
 -------------------
 
-.. code-block:: python
+.. code-block:: bash
 
     docker run -d -p 8080:80 --name atb-server -v atbvol:/atb atb
 
@@ -64,7 +64,7 @@ Installing ATB Docker Instance from Docker Hub
 ----------------------------------------------
 Once docker is installed, ensure you have access to the ATB Docker Hub repository.  Then pull the image from the repository using the following command:
 
-.. code-block:: python
+.. code-block:: bash
 
     docker pull martinstroet/atb-dev:atb-dev
 
@@ -72,7 +72,7 @@ Once docker is installed, ensure you have access to the ATB Docker Hub repositor
 Running an instance
 -------------------
 
-.. code-block:: python
+.. code-block:: bash
 
    docker run -d -p 8080:80 --name atb-server -v atbvol:/atb martinstroet/atb-dev:atb-dev
 
