@@ -29,7 +29,7 @@ First make sure you have an instance of your **atb-server** running, then to exp
 
 .. code-block:: bash
 
-    docker exec atb-server /usr/bin/mysqldump -u root --password=THE_PASSWORD_WE_GAVE_YOU atb > backup_atb.sql
+    docker exec atb-server scl enable rh-mariadb102 'mysqldump -u root atb' > backup_atb.sql
 
 Then, pull the updated container from Docker Hub using the following command:
 
@@ -40,5 +40,4 @@ Then, pull the updated container from Docker Hub using the following command:
 Finally, after pulling the new version of the container, import the database from the backup:
 
 .. code-block:: bash
-
-    docker exec atb-server  /usr/bin/mysql -u root --password=THE_PASSWORD_WE_GAVE_YOU atb < backup_atb.sql
+    docker exec atb-server scl enable rh-mariadb102 'mysql -u root atb' < backup_atb.sql
