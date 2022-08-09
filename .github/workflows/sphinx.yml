@@ -4,7 +4,7 @@ name: sphinx
 on: [push, pull_request]
 
 env:
-  DEFAULT_BRANCH: "main/docs"
+  DEFAULT_BRANCH: "main"
   #SPHINXOPTS: "-W --keep-going -T"
   # ^-- If these SPHINXOPTS are enabled, then be strict about the builds and fail on any warnings
 
@@ -37,6 +37,7 @@ jobs:
       # https://docs.github.com/en/actions/guides/building-and-testing-python#installing-dependencies
       # ^-- This gives info on installing dependencies with pip
       - name: Install dependencies
+        working-directory: ./docs
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -57,6 +58,7 @@ jobs:
       # Build
       - uses: ammaraskar/sphinx-problem-matcher@master
       - name: Build Sphinx docs
+        working-directory: ./docs
         run: |
           make dirhtml
           # This fixes broken copy button icons, as explained in
