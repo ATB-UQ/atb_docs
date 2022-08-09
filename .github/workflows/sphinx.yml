@@ -41,7 +41,8 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m 'deploy'
-          git config --global --add safe.directory /github/workspace/docs/build/html
+      - name: Fix git safe.directory in container
+        run: mkdir -p /home/runner/work/_temp/_github_home && printf "[safe]\n\tdirectory = /github/workspace" > /home/runner/work/_temp/_github_home/.gitconfig
       - name: Force push to destination branch
         uses: ad-m/github-push-action@v0.5.0
         with:
