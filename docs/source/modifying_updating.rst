@@ -40,4 +40,5 @@ Then, pull the updated container from Docker Hub using the following command:
 Finally, after pulling the new version of the container, import the database from the backup:
 
 .. code-block:: bash
+    
     docker exec atb-server scl enable rh-mariadb102 'mysql -u root atb' < backup_atb.sql
