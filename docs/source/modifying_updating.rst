@@ -17,8 +17,8 @@ Execute the following command to start the new container:
 
 To run two containers simultaneously, change the port binding (e.g. **8080** to **8181**) to ensure that conflicts do not exist between running containers.
 
-Updating ATB - Containerized Version
-------------------------------------
+Updating the ATB
+----------------
 
 Updates to ATB - Containerized Version will be released on Docker Hub and can be pulled in the same manner described in Installing and Starting the ATB.  
 
