@@ -9,7 +9,7 @@ After building GAMESS, the ATB server database must be initialized before many f
 Logging in as Administrator
 ---------------------------
 
-Access the web interface for the server from: http://localhost:8080/
+Access the web interface for the server from: http://0.0.0.0:8080/
 
 Navigate to the \"Login\" tab of the top navigation menu and enter your organization-specific administrator username (in the email address field) and password.
 
@@ -45,4 +45,4 @@ Click \"Next\" to to submit your molecule.
 
 After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.   
 
-You can monitor the progress of your submitted molecule (as well as all other notifications that are typically delivered via e-mail on the live ATB server) from the \"Notifications\" tab of the Admin drop-down interface: http://localhost:8080/index.py?tab=notifications
+You can monitor the progress of your submitted molecule (as well as all other notifications that are typically delivered via e-mail on the live ATB server) from the \"Notifications\" tab of the Admin drop-down interface: http://0.0.0.0:8080/index.py?tab=notifications
