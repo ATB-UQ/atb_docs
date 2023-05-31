@@ -21,7 +21,7 @@ Provide the appropriate information in all of the required fields marked with an
 Obtaining a Temporary Password
 ------------------------------
 
-After registering, the account will be automatically created and a password sent to the admin account.  These credentials can be viewed by logging in as the site admin and navigating to the \"Notifications\" tab of the Admin drop-down interface: http://localhost:8080/index.py?tab=notifications
+After registering, the account will be automatically created and a password sent to the admin account.  These credentials can be viewed by logging in as the site admin and navigating to the \"Notifications\" tab of the Admin drop-down interface: http://0.0.0.0:8080/index.py?tab=notifications
 
 Changing a Temporary Password
 -----------------------------
