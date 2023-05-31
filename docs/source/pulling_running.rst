@@ -40,7 +40,7 @@ Again, remember to replace ``YOUREPO`` with the full name of your organization-s
     
     Please note that the volume stil must be mounted in the location ``/atb`` irrespective of the volume name chosen.
 
-An instance of the container should now be running.  Verify this by navigating to http://localhost:8080/ in a web browser (assuming you used the default port number shown in the example above).  
+An instance of the container should now be running.  Verify this by navigating to http://0.0.0.0:8080/ in a web browser (assuming you used the default port number shown in the example above).  
 
 If you can see the ATB home page, the container has been successfully launched.  
 
