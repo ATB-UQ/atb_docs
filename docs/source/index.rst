@@ -8,29 +8,29 @@ ATB - Automated Topology Builder and Repository
 
 The ATB automates the generation of classical molecular force field parameters for user-submitted compounds.  
 
-The Containerized Version of the ATB allows a user to deploy the ATB web interface and processing pipelines for internal organizational use.  
 
-This document explains the procedure for installing, running, and updating this version of the ATB.
 
 .. toctree::
    :maxdepth: -1
-   :caption: Getting Started
+   :caption: Using the ATB
    
-   pre-install_checklist
-   installing_docker
-   pulling_running
-   gamess_injection
-   initializing_server
+   general/using_atb.rst
 
 .. toctree::
    :maxdepth: -1
-   :caption: Administrative Tasks
+   :caption: Container Documentation
    
-   adding_new_users
-   modifying_updating
+   container_version/about_container
+   container_version/pre-install_checklist
+   container_version/installing_docker
+   container_version/pulling_running
+   container_version/gamess_injection
+   container_version/initializing_server
+   container_version/adding_new_users
+   container_version/modifying_updating
    
 .. toctree::
    :maxdepth: -1
-   :caption: About
+   :caption: About the ATB
    
    references
