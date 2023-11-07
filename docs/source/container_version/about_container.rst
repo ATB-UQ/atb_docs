@@ -1,5 +1,5 @@
-ATB - Containerized Version
-===========================
+Using the ATB as a Container
+============================
 
 The Containerized Version of the ATB allows a user to deploy the ATB web interface and processing pipelines for internal organizational use.  
 
