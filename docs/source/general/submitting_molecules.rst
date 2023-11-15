@@ -24,7 +24,7 @@ Once you input the necessary information, click the next button. If the coordina
 
 If the molecule is not within the ATB database click \"Submit this Molecule"\ . 
 
-You will be sent an email once the topology of the molecule has finished being calculated. You will be able to view your submitted molecule by clicking on your profile name in the navigation bar and selecting submitted molecules. If you click on the Molid of you molecule you will be able to view its information. 
+You will be sent an email once the topology of the molecule has finished being calculated. You will be able to view your submitted molecule by clicking on your profile name in the navigation menu and then selecting submitted molecules. If you click on the Molid of you molecule you will be able to view its information. 
 
 Using JSME and JSmol
 --------------------
