@@ -27,6 +27,8 @@ You can search for the molecule in three ways.
 * By entering the chemical formula of the desired molecule in the designated input box
 * If known, putting the molID of the desired molecule in the designated input box. 
 
+This search can be further refined to only include molecules that have clinical data available, molecules that have the experimental free energy available, molecules that are currently being processed, molecules that have had their tautomers enumerated, or a combination thereof. 
+
 Once you click the \"Search"\  button, the list of molecules beneath the search bars will be reloaded to match your search terms. 
 
 If you did not search for the molecule using molID you may be presented with multiple options that look appropriate for your work. For example, searching the ATB database using the search term ibuprofen yields multiple conformers of both possible enantiomers for the molecule. To know how to compare these molecules please refer to the \"Comparing Molecules"\  section of this page. 
