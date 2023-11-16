@@ -27,7 +27,7 @@ You can search for the molecule in three ways.
 * By entering the chemical formula of the desired molecule in the designated input box
 * If known, putting the molID of the desired molecule in the designated input box. 
 
-This search can be further refined to only include molecules that have clinical data available, molecules that have the experimental free energy available, molecules that are currently being processed, molecules that have had their tautomers enumerated, or a combination thereof. 
+This search can be further refined to only include molecules that have clinical data available, molecules that have the experimental free energy available, molecules that are currently being processed, molecules that have had their tautomers enumerated, or a combination thereof by checking the appropriate boxes.
 
 Once you click the \"Search"\  button, the list of molecules beneath the search bars will be reloaded to match your search terms. 
 
