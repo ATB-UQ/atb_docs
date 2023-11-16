@@ -14,7 +14,7 @@ Paste the contents of your file into the designated input box and press submit.
 
 If there is a matching molecule within the database it will appear beneath the submit button. Click on \"Show Molecule Page"\  to open a new tab that molecules information page. If you want to download the output files of this molecule please refer to the \"Downloading Outputs"\  page. There may be multiple versions of the molecule. These molecules can be compared so the version that is best suited to your work can be selected. For help in selecting the appropriate molecule for your work, please refer to the \"Comparing Molecules"\  section of this page. 
 
-If a matching molecule is not within the ATB database you will see a message stating \"No matching molecules were found in the ATB database."\  beneath the submit button. The desired confirmation of your molecule may also not be available. If either of these are the case, please refer to the \"Submitting New Molecules"\  page. 
+If a matching molecule is not within the ATB database you will see a message stating \"No matching molecules were found in the ATB database."\  beneath the submit button. The desired conformer of your molecule may also not be available. If either of these are the case, please refer to the \"Submitting New Molecules"\  page. 
 
 Database Search
 ---------------
@@ -25,7 +25,7 @@ You can search for the molecule in three ways.
 
 * By entering a InChI key, IUPAC, common name, RNME or PDB hetID in the designated input box
 * By entering the chemical formula of the desired molecule in the designated input box
-* If known, putting the molID of the desired molecule in the designated input box. 
+* If known, by putting the molID of the desired molecule in the designated input box. 
 
 This search can be further refined to only include molecules that have clinical data available, molecules that have the experimental free energy available, molecules that are currently being processed, molecules that have had their tautomers enumerated, or a combination thereof by checking the appropriate boxes.
 
