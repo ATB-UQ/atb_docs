@@ -24,12 +24,14 @@ Searching through the ATB database can also be done by navigating to the \"Exist
 You can search for the molecule in three ways.
 
 * By entering a InChI key, IUPAC, common name, RNME or PDB hetID in the designated input box
-* By entering the chemical formula of desired molecule in the designated input box
-* If known, putting the molID in the designated input box. 
+* By entering the chemical formula of the desired molecule in the designated input box
+* If known, putting the molID of the desired molecule in the designated input box. 
 
 Once you click the \"Search"\  button, the list of molecules beneath the search bars will be reloaded to match your search terms. 
 
 If you did not search for the molecule using molID you may be presented with multiple options that look appropriate for your work. For example, searching the ATB database using the search term ibuprofen yields multiple conformers of both possible enantiomers for the molecule. To know how to compare these molecules please refer to the \"Comparing Molecules"\  section of this page. 
+
+If you cannot find the molecule you are looking for, you can submit the molecule for processing. For information on how to do this, please refer to the \"Submitting New Molecules"\  page.
 
 Comparing Molecules
 -------------------
