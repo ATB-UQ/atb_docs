@@ -1,7 +1,7 @@
 Searching for Molecules
 =======================
 
-Before submitting a molecule, check if it already exists within the ATB database. This can be done by using a structure search or by using searching through the database.
+Before submitting a molecule, check if it already exists within the ATB database. This can be done by using a structure search or by using search terms to search through the database.
 
 Structure Search
 ----------------
