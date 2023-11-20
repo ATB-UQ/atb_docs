@@ -34,6 +34,6 @@ The ATB automates the generation of classical molecular force field parameters f
    
 .. toctree::
    :maxdepth: -1
-   :caption: About the ATB
+   :caption: Reference Information
    
-   references
+   publications
