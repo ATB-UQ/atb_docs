@@ -19,7 +19,7 @@ The ATB automates the generation of classical molecular force field parameters f
    general/downloading_files
 
 .. toctree::
-   :maxdepth: -1
+   :maxdepth: 1
    :caption: About the ATB
    
    about/methodology
@@ -27,7 +27,7 @@ The ATB automates the generation of classical molecular force field parameters f
    about/publications
 
 .. toctree::
-   :maxdepth: -1
+   :maxdepth: 1
    :caption: The Containerized ATB
    
    container_version/about_container
