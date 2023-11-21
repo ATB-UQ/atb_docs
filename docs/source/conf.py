@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ATB'
-copyright = '2022, ATB'
-author = 'Alan Mark, Ariane Mora, Sharif Nada, Martin Stroet'
+copyright = '2023, ATB'
+author = 'Alan Mark, Ariane Mora, Sharif Nada, Audrey Sanzogni, Martin Stroet'
 
 # The full version, including alpha/beta/rc tags
-release = '3.0.0-rc.1'
+release = '3.0.0'
 
 
 # -- General configuration ---------------------------------------------------
