@@ -6,21 +6,29 @@
 ATB - Automated Topology Builder and Repository
 ===============================================
 
-The ATB automates the generation of classical molecular force field parameters for user-submitted compounds.  For a list of frequently asked questions, see the :ref:`FAQ`
+The ATB automates the generation of classical molecular force field parameters for user-submitted compounds.  For a list of frequently asked questions, see the :ref:`FAQ`.
 
 .. toctree::
    :maxdepth: -1
    :caption: Using the ATB
    
-   general/registering
    general/overview
+   general/registering
    general/searching_molecules
    general/submitting_molecules
    general/downloading_files
 
 .. toctree::
    :maxdepth: -1
-   :caption: Container Documentation
+   :caption: About the ATB
+   
+   about/methodology
+   about/features
+   about/publications
+
+.. toctree::
+   :maxdepth: -1
+   :caption: The Containerized ATB
    
    container_version/about_container
    container_version/pre-install_checklist
@@ -31,10 +39,3 @@ The ATB automates the generation of classical molecular force field parameters f
    container_version/adding_new_users
    container_version/modifying_updating
    
-.. toctree::
-   :maxdepth: -1
-   :caption: Reference Information
-   
-   about/methodology
-   about/features
-   about/publications
