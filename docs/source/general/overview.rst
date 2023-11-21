@@ -10,13 +10,10 @@ The ATB provides classical molecular force fields for novel compounds. Applicati
     * Material engineering
     * The refinement of x-ray crystal complexes
 
-This site provides:
+The ATB provides a number of outputs:
 
     * Access to classical force fields in formats compatible with GROMACS, GROMOS and LAMMPS simulation packages and CNS, Phenix, CCP4, Refmac5 and CYANA X-ray and NMR refinement packages.
     * A GROMOS to AMBER topology file converter.
     * Optimised geometries for molecules within the repository.
 
-.. _Key Features:
-
-Key Features
-============
+This documentation covers the process of using the ATB website to obtain these outputs.
