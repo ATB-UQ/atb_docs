@@ -21,6 +21,10 @@ Database Search
 
 Searching through the ATB database can also be done by navigating to the \"Existing Molecules"\  tab in the top navigation menu. You will be sent to a page with a number of search bars and a list of the 100 most recently processed molecules. 
 
+.. image:: images/existing_molecules.png
+    :width: 600
+    :alt: View of the existing molecules tab
+
 You can search for the molecule in three ways.
 
 * By entering a InChI key, IUPAC, common name, RNME or PDB hetID in the designated input box

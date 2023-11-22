@@ -3,22 +3,22 @@ Submitting New Molecules
 
 If the desired molecule has not yet been entered into the database, then it can be submitted for processing. 
 
-Submission process
+Submission Process
 ------------------
 
 Submitting a new molecule can be done by navigating to the \"Submit"\  tab at the top of the navigation menu
 
 Once open, you must supply the net charge of the molecule and the molecule coordinate data
 
-The coordinate data can be provided in 4 ways
+The coordinate data can be provided in 4 ways:
 
-.. note::
-   ALL the HYDROGEN atoms must be included when providing coordinate data.
-
-* Drawing/Modifying a molecule with JSME and JSmol. If using this method, go to the \"Using JSME and JSmol"\  section of this page
+* Drawing/Modifying a molecule with JSME and JSmol. If using this method, see :ref:`Using JSME and JSmol`
 * Providing a SMILES string. If using this method, go to the \"Using SMILES"\  section of this page
 * Uploading a PDB coordinate file
 * Pasting the contents of the PDB file into the designated input box.
+
+.. note::
+   ALL the HYDROGEN atoms must be included when providing coordinate data.
 
 Once you input the necessary information, click the next button. If the coordinate data matches that of a molecule within the database you will be informed. If the molecule is in the database you can use those topology files. If you would like to submit your version of the molecule, refer to the FAQ.
 
@@ -26,6 +26,7 @@ If the molecule is not within the ATB database click \"Submit this Molecule"\ .
 
 You will be sent an email once the topology of the molecule has finished being calculated. You will be able to view your submitted molecule by clicking on your profile name in the navigation menu and then selecting submitted molecules. If you click on the Molid of you molecule you will be able to view its information. 
 
+.. _Using JSME and JSmol:
 Using JSME and JSmol
 --------------------
 
