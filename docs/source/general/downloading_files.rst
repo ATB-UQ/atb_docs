@@ -1,3 +1,4 @@
+.. _Downloading Outputs:
 Downloading Outputs
 ================================
 

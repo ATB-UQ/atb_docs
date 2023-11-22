@@ -6,13 +6,23 @@ Before submitting a molecule, check if it already exists within the ATB database
 Structure Search
 ----------------
 
-Finding a molecule in the ATB database using a structure can be done by navigating to the \"Structure Search"\  tab in the top navigation menu. Select the format of the coordinate file of the molecule you are searching for in the database. The ATB supports PDB, SDF, MOL and MOL2 coordinate files. 
+Finding a molecule in the ATB database using a structure can be done by navigating to the \"Structure Search"\  tab in the top navigation menu. 
 
-Input the charge of your molecule.
+#. Select the format of the coordinate file of the molecule you are searching for in the database. The ATB supports searching using PDB, SDF, MOL and MOL2 coordinate files. 
 
-Paste the contents of your file into the designated input box and press submit. 
+#. Input the charge of your molecule.
 
-If there is a matching molecule within the database it will appear beneath the submit button. Click on \"Show Molecule Page"\  to open a new tab that molecules information page. If you want to download the output files of this molecule please refer to the \"Downloading Outputs"\  page. There may be multiple versions of the molecule. These molecules can be compared so the version that is best suited to your work can be selected. For help in selecting the appropriate molecule for your work, please refer to the \"Comparing Molecules"\  section of this page. 
+#. Paste the contents of your file into the designated input box and press \"Submit"\. 
+
+Match Found
+^^^^^^^^^^^
+
+If there are matching molecules in the database they will now appear beneath the \"Submit"\ button. Click on \"Show Molecule Page"\ to open the molecule information page in a new tab. If you want to download the output files of this molecule please refer to :ref:`Downloading Outputs`. 
+
+Comparing Molecules
+-------------------
+
+If there were multiple matches to the supplied query structure, these will appear in the \"Other conformers for this molecule"\ section beneath \"Processing Information"\.  These molecules can be compared so the version that is best suited to your work can be selected. Each conformer will have a \"Compare with"\ button that you can click on, which will take you to a page which displays the GROMOS topology as well as a RMSD Superposition of the reference molecule (green) and the molecule it is being compared with (blue). You can use these to determine which conformer is most suitable for your work. If none of the conformers will meaningfully affect the outcome of your work, choosing the one with the lowest QM energy is a common strategy.
 
 If a matching molecule is not within the ATB database you will see a message stating \"No matching molecules were found in the ATB database."\  beneath the submit button. The desired conformer of your molecule may also not be available. If either of these are the case, please refer to the \"Submitting New Molecules"\  page. 
 
@@ -39,9 +49,4 @@ If you did not search for the molecule using molID you may be presented with mul
 
 If you cannot find the molecule you are looking for, you can submit the molecule for processing. For information on how to do this, please refer to the \"Submitting New Molecules"\  page.
 
-Comparing Molecules
--------------------
 
-A molecule page will have a list of other conformers of that have been submitted to the ATB. This list is beneath the \"Processing Information"\ . 
-
-Each conformer will have a \"Compare with"\ button that you can click on, which will take you to a page which displays the GROMOS topology, and a RMSD Superposition of the reference molecule (green) and the molecule it is being compared with (blue). You can use these to determine which conformer is most suitable for your work. If none of the conformers will meaningfully affect the outcome of your work, choosing the one with the lowest QM energy is acceptable.
