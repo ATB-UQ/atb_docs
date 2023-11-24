@@ -4,7 +4,7 @@ Feature List
 User Interface
 --------------
 
-* Submission of molecules with molecular drawer, SMILES or PDB file. ref::
+* Submission of molecules with molecular drawer, SMILES or PDB file.
 * Search a database of pre-calculate molecules with various descriptors including 3D structures. ref::
 * Links molecules in other databases including `CheMBL <https://www.ebi.ac.uk/chembl/>`_, `RCSB PDB <https://www.rcsb.org/>`_, and `ChemSpider <http://www.chemspider.com/>`_. 
 * Save molecules of interest
