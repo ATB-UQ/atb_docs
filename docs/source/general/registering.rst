@@ -1,7 +1,7 @@
 Registering for an ATB Account
 ==============================
 
-It is possible to access to access many of the basic features of the site directly however in order to submit a new molecule or to download files, you need to be logged into your account. If you do not have an account, you need to create one. 
+It is possible to access many of the basic features of the site directly however in order to submit a new molecule or to download files, you need to be logged into your account. If you do not have an account, you need to create one. 
 
 To do this, navigate to the \"Register"\  tab in the top navigation menu of the ATB website. 
 
