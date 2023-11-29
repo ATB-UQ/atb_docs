@@ -2,7 +2,7 @@
 Downloading Outputs
 ================================
 
-Files necessary for running molecular dynamics simulations like PDB and ITP files, X-ray docking files like CIF and PQR fils, NMR refinement files are available for both viewing and download. The NMR refinement files are only available for molecules that have been labeled as amino acids by the ATB team. 
+Files necessary for running molecular dynamics simulations like PDB and ITP files, X-ray docking files like CIF and PQR files, NMR refinement files are available for both viewing and download. The NMR refinement files are only available for molecules that have been labeled as amino acids by the ATB team. 
 
 .. note::
    All the files on the molecule page are created using tools developed by the ATB team or  other groups. 
