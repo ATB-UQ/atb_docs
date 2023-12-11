@@ -15,7 +15,7 @@ To retrieve these files simply click on the appropriately labeled tab on the mol
 .. image:: images/molecule_information_page_tabs.png
    :width: 600
 
-For example, if you wish to download the PDB or ITP files for your molecule to run a simulation, you can click on the ‘Molecular Dynamics (MD) Files’ tab.  You can select the format in which the MD files will be downloaded. You can select between GROMACS, GROMOS11, GROMOS96, and LAMMPS. 
+For example, if you wish to download the PDB or ITP files for your molecule to run a simulation, you can click on the ‘Molecular Dynamics (MD) Files’ tab.  You can select the format in which the MD files will be downloaded. You can select between GROMACS, GROMOS11, GROMOS96, and LAMMPS. You will not need to select a format in the other tabs. 
 
 .. image:: images/formate_selection.png
    :width: 600
