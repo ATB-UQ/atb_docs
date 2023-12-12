@@ -3,8 +3,9 @@ Downloading Outputs
 ================================
 
 The information page of a molecule contains
-*Files necessary for running molecular dynamics simulations: MTB, G96, PDB, ITP, or moltemplate files depending on the selected format (GROMACS, GROMOS11, GROMOS96, and LAMMPS). The LAMMPS formate is experimental. 
-*X-ray docking files: eLBOW CIF, CCD compatible CIF, PDB, CNS (parameter and topology), PQR, and CYANA files
+
+* Files necessary for running molecular dynamics simulations: MTB, G96, PDB, ITP, or moltemplate files depending on the selected format (GROMACS, GROMOS11, GROMOS96, and LAMMPS). The LAMMPS formate is experimental. 
+* X-ray docking files: eLBOW CIF, CCD compatible CIF, PDB, CNS (parameter and topology), PQR, and CYANA files
 * NMR refinement files: CYANA, CNS (parameter and toplogy), and PDB files. These files are only available for molecules that have been labeled as amino acids by the ATB team. 
 
 .. note::
