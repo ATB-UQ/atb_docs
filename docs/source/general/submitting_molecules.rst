@@ -14,7 +14,7 @@ Submitting a new molecule can be done by navigating to the \"Submit"\  tab at th
 This will open a page where you can submit a molecule to the ATB using 4 different methods.
 
 * Drawing/Modifying a molecule with JSME and JSmol. 
-* Providing a SMILES string. If using this method, go to the \"Using SMILES"\  section of this page
+* Providing a SMILES string. 
 * Uploading a PDB coordinate file
 * Pasting the contents of the PDB file into the designated input box.
 
@@ -112,7 +112,7 @@ If you are happy with your molecule, click \"Transfer to submit page"\ . You wil
 
 .. image:: images/filled_PDB_input_box.png
    :width: 600
-
+.. _Using SMILES:
 Using SMILES
 ------------
 
