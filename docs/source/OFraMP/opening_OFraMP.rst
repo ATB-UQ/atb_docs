@@ -28,6 +28,8 @@ From this window you can either upload an OSS file from your device, or you can 
 
 Before importing your molecule to the ATB, select the shell size.
 
+.. image:: images/Webpage_shellsize.png
+   :width: 500
 
 Ignore the 'Fragment repository' select list. The only currently available option is ATB3.
 
@@ -51,7 +53,7 @@ Click 'Submit'.
 .. image:: images/OFraMP_submit.png
    :width: 500
 
-In both methods, an OFraMp page will load your target molecule. This may take a few minutes. 
+In both methods, an OFraMP page will load your target molecule. This may take a few minutes. 
 
 .. image:: images/Loaded_target_OFraMP_molecule.png
    :width: 600
@@ -78,7 +80,7 @@ Click 'Fragment-Based Parametrisation with OFraMP'.
 .. image:: images/Molecule_information_page_OFraMP_button.png
    :width: 600
 
-An OFraMp page will load your target molecule. This may take a few minutes. 
+An OFraMP page will load your target molecule. This may take a few minutes. 
 
 .. image:: images/Loaded_target_OFraMP_molecule.png
    :width: 600
