@@ -3,7 +3,7 @@ About OFraMP
 
 OFraMP stands for Online Fragment-based Molecule Parametrisation. This online tool uses fragments of parametrised molecules from the ATB as fragments for a larger target molecule. It identifies potential fragments matches for the target molecule and compares these fragments using a novel hierarchical matching procedure.
 
-An atoms within a pre-parameterised model that are selected as part of a fragment for a target molecule based on whether it and its surrounding atoms match a target molecule. The size of this buffer region is referred to as the shell size. 
+An atom within a pre-parameterised model that are selected as part of a fragment for a target molecule is based on whether it and its surrounding atoms match the target molecule. The size of this buffer region is referred to as the shell size. The user can select the shell size.
 
 The user selects matching fragments until the the target molecule is fully parametrised. 
 
