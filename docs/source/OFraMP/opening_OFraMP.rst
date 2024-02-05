@@ -28,8 +28,6 @@ From this window you can either upload an OSS file from your device, or you can 
 
 Before importing your molecule to the ATB, select the shell size.
 
-.. image:: images/Webpage_shellsize.png
-   :width: 500
 
 Ignore the 'Fragment repository' select list. The only currently available option is ATB3.
 
