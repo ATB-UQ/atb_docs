@@ -19,7 +19,12 @@ Click 'New Molecule'.
 .. image:: images/OFraMP_New_molecule.png
    :width: 500
 
-You can either upload an OSS file from your device or you can import a molecule from the ATB.
+A new window will be loaded.
+
+.. image:: images/OFraMP_molecule_import_window.png
+   :width: 500
+
+From this window you can either upload an OSS file from your device, or you can import a molecule from the ATB.
 
 Before importing your molecule to the ATB, select the shell size.
 
@@ -38,11 +43,6 @@ Navigate to your OSS file and click 'Open'.
 .. image:: images/OSS_file.png
    :width: 550
 
-The OFraMp page will load your target molecule. This may take a few minutes. 
-
-.. image:: images/Loaded_target_OFraMP_molecule.png
-   :width: 600
-
 To import a molecule from the ATB database, enter the molecule ID of the desired molecule into the input box. 
 
 .. image:: images/Enter_ATB_molid.png
@@ -53,7 +53,7 @@ Click 'Submit'.
 .. image:: images/OFraMP_submit.png
    :width: 500
 
-An OFraMp page will load your target molecule. This may take a few minutes. 
+In both methods, an OFraMp page will load your target molecule. This may take a few minutes. 
 
 .. image:: images/Loaded_target_OFraMP_molecule.png
    :width: 600
