@@ -48,6 +48,8 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+#suppress sphinx footer
+html_show_sphinx = False
 
 html_theme_options = {
     'logo_only': True,
