@@ -9,6 +9,7 @@ A molecule can be imported into OFraMP in two ways.
 OFraMP website
 --------------
 Access the OFraMP website through the URL https://fragments.atb.uq.edu.au/oframp/ 
+
 A webpage with with a welcome message will be loaded. 
 
 .. image:: images/OFraMP_welcome_page.png
