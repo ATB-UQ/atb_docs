@@ -13,7 +13,7 @@ The pre-parmaterised molecule that the fragment is being selected from is shown 
 .. image:: images/preparametrised_molecule.png
    :width: 400
 
-Three different shell sizes, and therefore the group of atoms (orange) that must match a section of the target molecule for a subsection of that atoms group (blue) to be considered a potential fragment.
+Three different shell sizes, and therefore the group of atoms (orange) that must match a section of the target molecule for a subsection of that group of atoms (blue) to be considered a potential fragment.
 
 .. image:: images/shell_size_examples.png
    :width: 900
