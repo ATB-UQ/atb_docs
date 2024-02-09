@@ -16,7 +16,7 @@ Parameter Generation
 --------------------
 
 * Lennard Jones parameters refined against experimental solvation and pure liquid properties.
-* ATB parametrisation and validation is performed using a single-range 1.4 nm cutoff for both Lennard Jones and Coulomb interactions (see `FAQ <https://github.com/ATB-UQ/atb_docs/blob/main/docs/source/faq.rst>`_)
+* ATB parametrisation and validation is performed using a single-range 1.4 nm cutoff for both Lennard Jones and Coulomb interactions (see `FAQ <https://atb-uq.github.io/atb_docs/faq.html>`_)
 * Atomic charges fitted to QM electrostatic potentials at B3LYP/6-31G* level of theory (for molecules < 50 atoms).
 * Robust symmetry routines to ensure identical parameters are assigned to chemically equivalent atoms, bonds and angles.
 * Bonded parameter assignment using force constants estimated from Hessian (B3LYP/6-31G*, for molecules < 40 atoms).
