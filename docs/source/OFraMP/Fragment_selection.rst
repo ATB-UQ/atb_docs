@@ -14,7 +14,7 @@ To begin selecting fragments click on an atom group.
 .. image:: images/select_atom_group.png
    :width: 500
 
-Its details will appear on a window to the left of the target molecule. These details include the number of atoms in the atom group, the number of atoms in the group that have been parametrised, and any charges that may have been assigned to those atoms. If no charges have yet been assigned, the sections that show this information will be blank.
+Its information will appear on a window to the left of the target molecule. This information includes the number of atoms in the atom group, the number of atoms in the group that have been parametrised, and any charges that may have been assigned to those atoms. If no charges have yet been assigned, the sections that show this information will be blank.
 
 .. image:: images/atom_selection_window.png
    :width: 300
