@@ -84,7 +84,7 @@ To resolve this, click 'Send missing to ATB' in OFraMP's menu. This will generat
 
 You can also choose to `submit <https://atb-uq.github.io/atb_docs/general/submitting_molecules.html>`_ a molecule in the ATB that covers the missing parameter space yourself. 
 
-The missing charge parameters can also be assigned manually. 
+The missing charge parameters can also be assigned `manually <https://atb-uq.github.io/atb_docs/OFraMP/Manual_charge_change.html>`_. 
 
 Reducing the shell size to search for the missing atom groups in a larger set of fragments is also an option. 
 
