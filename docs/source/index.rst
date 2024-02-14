@@ -28,6 +28,17 @@ The ATB automates the generation of classical molecular force field parameters f
 
 .. toctree::
    :maxdepth: 1
+   :caption: OFraMP
+   
+   OFraMP/OFraMP_information_page
+   OFraMP/opening_OFraMP
+   OFraMP/shell_size_explanation
+   OFraMP/Fragment_selection
+   OFraMP/Manual_charge_change
+   OFraMP/downloading_parameter_files
+
+.. toctree::
+   :maxdepth: 1
    :caption: The Containerized ATB
    
    container_version/about_container
