@@ -1,4 +1,4 @@
-Importing a molecule into OFraMP
+Importing a Molecule into OFraMP
 ================================
 
 A molecule can be imported into OFraMP through the molecule's information page on the ATB website. 
