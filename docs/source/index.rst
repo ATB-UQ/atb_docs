@@ -34,6 +34,8 @@ The ATB automates the generation of classical molecular force field parameters f
    OFraMP/opening_OFraMP
    OFraMP/shell_size_explanation
    OFraMP/Fragment_selection
+   OFraMP/missing_charges
+   OFraMP/Sending_the_charges_to_the_ATB
    OFraMP/Manual_charge_change
    OFraMP/downloading_parameter_files
 
