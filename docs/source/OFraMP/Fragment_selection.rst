@@ -66,5 +66,5 @@ Click 'Apply solution'.
 .. image:: images/apply_clash_solution.png
    :width: 450
 
-Once your target molecule is fully parametrised, you can `send its charges to the ATB <https://atb-uq.github.io/atb_docs/OFraMP/Sending_the_charges_to_the_ATB.html#>`_
+Once your target molecule is fully parametrised, you can `send its charges to the ATB <https://atb-uq.github.io/atb_docs/OFraMP/Sending_charges_to_the_ATB.html>`_
 
