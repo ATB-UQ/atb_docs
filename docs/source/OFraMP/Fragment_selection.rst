@@ -1,13 +1,10 @@
-Building the target molecule
+Selecting Fragments
 ===================
 
 Once you have imported your target molecule into OFraMP, you can start building it with fragments from pre-paramtrised molecules from the ATB database. An example target molecule is displayed in the image below.
 
 .. image:: images/Loaded_target_OFraMP_molecule.png
    :width: 600
-
-Selecting fragments
--------------------
 
 To begin selecting fragments click on an atom group.
 
@@ -44,9 +41,9 @@ Once you have selecteded a fragment, the atom groups in the target molecule will
 .. image:: images/light_green_selected_fragment.png
    :width: 500
 
-Continue to select fragments until the target molecule has been fully parametrised.
+Continue to select fragments until the target molecule has been fully parametrised. Some atom groups in your target molecule may be coloured red. These are `missing charges <https://atb-uq.github.io/atb_docs/OFraMP/OFraMP_information_page.html#>`_
 
-Charge clashes
+Charge Clashes
 --------------
 
 The atom groups of selected atoms may overlap. The charge of the overlapping atom group may differ in each fragment. Atom groups with clashing charges will be coloured yellow in the target molecule. 
@@ -69,63 +66,5 @@ Click 'Apply solution'.
 .. image:: images/apply_clash_solution.png
    :width: 450
 
-Missing charges
----------------
+Once your target molecule is fully parametrised, you can `send its charges to the ATB <https://atb-uq.github.io/atb_docs/OFraMP/Sending_the_charges_to_the_ATB.html#>`_
 
-One or multiple atom groups may not be able to assigned a charge from the available pre-parametrised molecules from the ATB at your chosen shell size. These atom groups will be coloured in red.
-
-.. image:: images/missing_atom_groups.png
-   :width: 500
-
-To resolve this, click 'Send missing to ATB' in OFraMP's menu. This will generate a one or more molecule's that will cover the missing paramter space, and send them to the ATB for processing. 
-
-.. image:: images/send_missing_to_ATB.png
-   :width: 600
-
-You can also choose to `submit <https://atb-uq.github.io/atb_docs/general/submitting_molecules.html>`_ a molecule in the ATB that covers the missing parameter space yourself. 
-
-The missing charge parameters can also be assigned `manually <https://atb-uq.github.io/atb_docs/OFraMP/Manual_charge_change.html>`_. 
-
-Reducing the shell size to search for the missing atom groups in a larger set of fragments is also an option. 
-
-Completing the target molecule
-------------------------------
-
-Once your target molecule is fully parametrised the window below will appear.
-
-.. image:: images/fully_parametrised_window.png
-   :width: 450
-
-The total charge of your molecule may not be correct. If this is the case you can do one of two things. 
-
-#. You can average the charge difference between the current charge of the molecule and your desired charge over all the atom groups. 
-#. You can manually change the charges of specific atoms.
-
-To average the difference of the charge evenly among all the atom groups first type the appropriate integer charge in the input box.
-
-.. image:: images/change_charge_integer.png
-   :width: 450
-
-Then click 'Set total to'. 
-
-.. image:: images/set_total_to.png
-   :width: 450
-
-The 'Molecule total charge' should now be equal to your selected integer.
-
-If you are happy with the parametrisation of your target molecule, click 'Send charges to ATB' on the window.
-
-.. image:: images/send_charges_to_ATB_window.png
-   :width: 450
-
-To manually change the charges of specifc atoms you must first close the window,
-
-.. image:: images/close_fully_parametrised_window.png
-   :width: 450
-
-Please view this `tutorial <https://atb-uq.github.io/atb_docs/OFraMP/Manual_charge_change.html>`_ on how to manually change the charge of individual atoms.
-
-Once you are happy with the parametrisation of your target molecule, click 'Send charges to ATB' in OFraMP's menu. 
-
-.. image:: images/send_charges_to_ATB_OFraMP_menu.png
-   :width: 600
