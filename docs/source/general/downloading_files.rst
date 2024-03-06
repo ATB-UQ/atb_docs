@@ -35,7 +35,8 @@ Click on the hyperlink of the file you wish to download.
 
 This opens a page with contents of your desired file.
 
-
+.. image:: images/file_contents_page.png
+   :width: 80%
 
 Open your web browser's menu and clicking 'Save Page As' or the equivalent thereof. You can then save the contents of this webpage to file with the desired name and appropriate extension as file to your device. 
 
