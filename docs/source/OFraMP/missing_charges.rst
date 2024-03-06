@@ -4,12 +4,12 @@ Missing Charges
 One or multiple atom groups may not be able to assigned a charge from the available pre-parametrised molecules from the ATB at your chosen shell size. These atom groups will be coloured in red.
 
 .. image:: images/missing_atom_groups.png
-   :width: 500
+   :width: 67%
 
 To resolve this, click 'Send missing to ATB' in OFraMP's menu. This will generate a one or more molecule's that will cover the missing paramter space, and send them to the ATB for processing. 
 
 .. image:: images/send_missing_to_ATB.png
-   :width: 600
+   :width: 80%
 
 You can also choose to `submit <https://atb-uq.github.io/atb_docs/general/submitting_molecules.html>`_ a molecule in the ATB that covers the missing parameter space yourself. 
 
