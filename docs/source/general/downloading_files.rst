@@ -21,7 +21,14 @@ For example, if you wish to download the PDB or ITP files for your molecule to r
 .. image:: images/formate_selection.png
    :width: 600
 
-Click on the hyperlink of your desired file.
+.. note::
+   The web browser used in the following examples is Firefox
+
+
+Method 1
+------------------
+
+Click on the hyperlink of the file you wish to download.
 
 .. image:: images/file_hyperlink.png
    :width: 600
@@ -31,22 +38,17 @@ This opens a page with contents of your desired file.
 .. image:: images/file_contents_page.png
    :width: 600
 
-Firefox and Safari
-------------------
+Open your web browser's menu and clicking 'Save Page As' or the equivalent thereof. You can then save the contents of this webpage to file with the desired name and appropriate extension as file to your device. 
 
-If you are using Firefox or Safari then this information cannot be dowloaded. You must instead create a text file with an appropriate name and the correct file extension. Then simply copy and paste the contents of the web page into the aforementioned open file. 
+.. image:: images/save_page_as.png
+   :width: 600
 
-This method will work with all web browsers.
+Method 2
+------------
 
-Google Chrome
--------------
+Right click on the hyperlink of the file you wish to download. Then click 'Save Link As' or the equivalent thereof. 
 
-If you are using Google Chrome click the kebab menu to right of the URL bar. Navigate to \"More Tools"\  and the click on \"Save Page As"\ . 
+.. image:: images/save_link_as.png
+   :width: 600
 
-.. image:: images/kebab_menu.png
-   :width: 250
-
-Rename the file with the desired file name and the appropriate file extension. Save it to the desired file location.
-
-.. image:: images/google_saving_window.png
-   :width: 250
+You can then save the contents of the hyperlink to a file on your device. Ensure the file has the appropriate extension. 
