@@ -14,12 +14,12 @@ The information page of a molecule contains
 To retrieve these files simply click on the appropriately labeled tab on the molecule page's navigation bar.
 
 .. image:: images/molecule_information_page_tabs.png
-   :width: 600
+   :width: 80%
 
 For example, if you wish to download the PDB or ITP files for your molecule to run a simulation, you can click on the ‘Molecular Dynamics (MD) Files’ tab.  You can select the format in which the MD files will be downloaded. You can select between GROMACS, GROMOS11, GROMOS96, and LAMMPS. You will not need to select a format in the other tabs. 
 
 .. image:: images/formate_selection.png
-   :width: 600
+   :width: 80%
 
 .. note::
    The web browser used in the following examples is Firefox
@@ -31,17 +31,16 @@ Method 1
 Click on the hyperlink of the file you wish to download.
 
 .. image:: images/file_hyperlink.png
-   :width: 600
+   :width: 80%
 
 This opens a page with contents of your desired file.
 
-.. image:: images/file_contents_page.png
-   :width: 600
+
 
 Open your web browser's menu and clicking 'Save Page As' or the equivalent thereof. You can then save the contents of this webpage to file with the desired name and appropriate extension as file to your device. 
 
 .. image:: images/save_page_as.png
-   :width: 600
+   :width: 80%
 
 Method 2
 ------------
@@ -49,6 +48,6 @@ Method 2
 Right click on the hyperlink of the file you wish to download. Then click 'Save Link As' or the equivalent thereof. 
 
 .. image:: images/save_link_as.png
-   :width: 600
+   :width: 80%
 
 You can then save the contents of the hyperlink to a file on your device. Ensure the file has the appropriate extension. 
