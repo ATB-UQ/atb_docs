@@ -11,12 +11,12 @@ A downloaded copy of `GAMESS <https://www.msg.chem.iastate.edu/gamess/>`_ is req
 As per the `GAMESS User License Agreement <https://www.msg.chem.iastate.edu/gamess/License_Agreement.html>`_, GAMESS may not be redistributed.  
 
 Please request a copy of GAMESS from `the GAMESS Registration System <https://www.msg.chem.iastate.edu/GAMESS/download/register/>`_ after reviewing the license agreement. You can select any of the Source Code Distribution options.
-A link will then be sent to you with download instructions.
+A link will then be sent to you with download instructions as well as a username and password to authenticate the download.  
 
 .. note::
-    It may take several days to receive an e-mail with the GAMESS download link.
+    It may take several days to receive an e-mail with the GAMESS download credentials.
 
-Once you have received the e-mail link, download the archive and note its location as it will be needed during installation.  The provided archive does not require extraction.
+Once you have received this e-mail, do not click on the link contained within.  Instead, use `this persistent download link <https://www.msg.chem.iastate.edu/GAMESS/download/source/gamess.Jul152024R2.tar.gz>`_ to the specific version of GAMESS used by the ATB.  Enter the username and password from the e-mail sent by GAMESS to begin the download.  Note the location the download is saved to, as it will be needed during installation.  The provided archive does not require extraction.
 
 Docker Hub Account
 ------------------

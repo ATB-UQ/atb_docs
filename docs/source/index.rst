@@ -49,7 +49,7 @@ The ATB automates the generation of classical molecular force field parameters f
    container_version/pre-install_checklist
    container_version/installing_docker
    container_version/pulling_running
-   container_version/gamess_injection
+   container_version/gamess_installation
    container_version/initializing_server
    container_version/adding_new_users
    container_version/modifying_updating

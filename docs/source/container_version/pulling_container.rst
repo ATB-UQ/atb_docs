@@ -35,8 +35,8 @@ Load the docker image (may take a few minutes).
     docker load -i atb-docker.tar
 
 
-Running Container
--------------------
+Running the Container
+---------------------
 
 .. code-block:: python
 

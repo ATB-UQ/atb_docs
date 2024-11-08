@@ -7,7 +7,7 @@ From the directory containing the download, copy the archive into the root direc
 
 .. code-block:: bash
 
-    docker cp gamess-current.tar.gz atb-server:/
+    docker cp gamess.Jul152024R2.tar.gz atb-server:/
 
 Then run the following command to build GAMESS inside the running ATB container:
     

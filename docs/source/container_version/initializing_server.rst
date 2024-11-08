@@ -39,9 +39,9 @@ In the field provided for pasting a PDB structure, paste the following PDB struc
     CONECT    5    2
 
 .. note::
-    You can submit any structure to initialize the database.  This includes using the JME biulder. Methane has been provided as an example as it is a small molecules and the coordinates correspond to an optimized geometry. This reduces the processing time.
+    Any PDB structure (or structure from the JME builder) can be submitted to initialize the database.  Methane has been provided as an example as it is a small molecules and the coordinates above correspond to an already-optimized geometry. This results in a short processing time.
     
-Click \"Next\" to to submit your molecule.  
+Click \"Next\" to view a preview of your submission, then click \"Submit This Molecule\" to finalize your submission.  
 
 After your molecule has been successfully submitted, ATB - Containerized Version should now be ready for use.   
 
