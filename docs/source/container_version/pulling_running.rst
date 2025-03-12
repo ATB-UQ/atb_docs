@@ -31,7 +31,7 @@ Now that the container has been pulled from the repository, start an instance of
 
 .. code-block:: bash
 
-   docker run -d -p 8080:80 --name atb-server -v atbvol:/atb YOUREPO
+   docker run -d -p 8080:80 --name atb-server -v atbvol:/atb --restart unless-stopped YOUREPO
 
 Again, remember to replace ``YOUREPO`` with the full name of your organization-specific repository.
 
