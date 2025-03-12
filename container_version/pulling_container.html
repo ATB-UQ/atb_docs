@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logging In &mdash; ATB 3.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme_overrides.css?v=8060bbce" />
+
+  
+    <link rel="shortcut icon" href="../_static/fav.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=acc74ff5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Using the ATB</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview of the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/registering.html">Registering for an ATB Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/searching_molecules.html">Searching for Molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/submitting_molecules.html">Submitting New Molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/downloading_files.html">Downloading Outputs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About the ATB</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/methodology.html">Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/features.html">Feature List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/publications.html">References</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OFraMP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/OFraMP_information_page.html">About OFraMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/opening_OFraMP.html">Importing a Molecule into OFraMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/shell_size_explanation.html">Shell size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/Fragment_selection.html">Selecting Fragments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/missing_charges.html">Missing Charges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/Manual_charge_change.html">Manually changing the charge of an atom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/saving_progress.html">Saving Your Progress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/Sending_charges_to_the_ATB.html">Sending Charges to the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/downloading_parameter_files.html">Downloading Coordinate and Topology files</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">The Containerized ATB</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about_container.html">Using the ATB as a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pre-install_checklist.html">Installation Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installing_docker.html">Installing Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_running.html">Installing and Starting the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gamess_installation.html">Installing GAMESS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initializing_server.html">Initializing the ATB Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifying_updating.html#updating-the-atb">Updating the ATB</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ATB</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Logging In</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ATB-UQ/atb_docs/blob/main/docs/source/container_version/pulling_container.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="logging-in">
+<h1>Logging In<a class="headerlink" href="#logging-in" title="Link to this heading"></a></h1>
+<p>Once docker is installed, use the following command to log into the Docker Hub account linked to your organization-specific repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>login
+</pre></div>
+</div>
+<p>Supply your Docker Hub username and password when prompted.</p>
+</section>
+<section id="pulling-the-container">
+<h1>Pulling the Container<a class="headerlink" href="#pulling-the-container" title="Link to this heading"></a></h1>
+<p>Once logged in, pull the ATB container image from your organization-specific repository.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>pull<span class="w"> </span>YOURREPO
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">YOUREPO</span></code> with the full name of your organization-specific repository.  The full name should be in the format <code class="docutils literal notranslate"><span class="pre">UPLOADERNAME/REPONAME</span></code>.</p>
+<p>Once docker is installed, ensure you have access to the ATB Docker Hub repository.  Then pull the image from the repository using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span>--name<span class="w"> </span>atb-server<span class="w"> </span>-v<span class="w"> </span>atbvol:/atb<span class="w"> </span>martinstroet/atb-dev:atb-dev
+</pre></div>
+</div>
+<p>Load the docker image (may take a few minutes).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </span>atb-docker.tar
+</pre></div>
+</div>
+</section>
+<section id="running-the-container">
+<h1>Running the Container<a class="headerlink" href="#running-the-container" title="Link to this heading"></a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> <span class="o">-</span><span class="n">p</span> <span class="mi">8080</span><span class="p">:</span><span class="mi">80</span> <span class="o">--</span><span class="n">name</span> <span class="n">atb</span><span class="o">-</span><span class="n">server</span> <span class="o">-</span><span class="n">v</span> <span class="n">atbvol</span><span class="p">:</span><span class="o">/</span><span class="n">atb</span> <span class="n">atb</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ATB.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

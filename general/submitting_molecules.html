@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submitting New Molecules &mdash; ATB 3.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme_overrides.css?v=8060bbce" />
+
+  
+    <link rel="shortcut icon" href="../_static/fav.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=acc74ff5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Downloading Outputs" href="downloading_files.html" />
+    <link rel="prev" title="Searching for Molecules" href="searching_molecules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Using the ATB</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="registering.html">Registering for an ATB Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="searching_molecules.html">Searching for Molecules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Submitting New Molecules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submission-process">Submission Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-jsme-and-jsmol">Using JSME and JSmol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-smiles">Using SMILES</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="downloading_files.html">Downloading Outputs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About the ATB</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/methodology.html">Methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/features.html">Feature List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/publications.html">References</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">OFraMP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/OFraMP_information_page.html">About OFraMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/opening_OFraMP.html">Importing a Molecule into OFraMP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/shell_size_explanation.html">Shell size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/Fragment_selection.html">Selecting Fragments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/missing_charges.html">Missing Charges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/Manual_charge_change.html">Manually changing the charge of an atom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/saving_progress.html">Saving Your Progress</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/Sending_charges_to_the_ATB.html">Sending Charges to the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../OFraMP/downloading_parameter_files.html">Downloading Coordinate and Topology files</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">The Containerized ATB</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/about_container.html">Using the ATB as a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/pre-install_checklist.html">Installation Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/installing_docker.html">Installing Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/pulling_running.html">Installing and Starting the ATB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/gamess_installation.html">Installing GAMESS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/initializing_server.html">Initializing the ATB Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/adding_new_users.html">Adding New Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/modifying_updating.html">Committing Changes to a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../container_version/modifying_updating.html#updating-the-atb">Updating the ATB</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ATB</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Submitting New Molecules</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ATB-UQ/atb_docs/blob/main/docs/source/general/submitting_molecules.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="submitting-new-molecules">
+<h1>Submitting New Molecules<a class="headerlink" href="#submitting-new-molecules" title="Link to this heading"></a></h1>
+<p>If the desired molecule has not yet been entered into the database, then it can be submitted for processing.</p>
+<section id="submission-process">
+<h2>Submission Process<a class="headerlink" href="#submission-process" title="Link to this heading"></a></h2>
+<p>Submitting a new molecule can be done by navigating to the &quot;Submit” tab at the top of the navigation menu.</p>
+<a class="reference internal image-reference" href="../_images/navigation_submit.png"><img alt="../_images/navigation_submit.png" src="../_images/navigation_submit.png" style="width: 80%;" />
+</a>
+<p>This will open a page where you can submit a molecule to the ATB using 4 different methods.</p>
+<ul class="simple">
+<li><p>Drawing/Modifying a molecule with JSME and JSmol.</p></li>
+<li><p>Providing a SMILES string.</p></li>
+<li><p>Uploading a PDB coordinate file</p></li>
+<li><p>Pasting the contents of the PDB file into the designated input box.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/submit_options_page.png"><img alt="../_images/submit_options_page.png" src="../_images/submit_options_page.png" style="width: 80%;" />
+</a>
+<p>Before you enter the coordinate data you must supply the net charge of the molecule.</p>
+<a class="reference internal image-reference" href="../_images/submit_net_charge.png"><img alt="../_images/submit_net_charge.png" src="../_images/submit_net_charge.png" style="width: 80%;" />
+</a>
+<p>If you are entering your coordinate data using JSME and JSmol please see <a class="reference internal" href="#using-jsme-and-jsmol"><span class="std std-ref">Using JSME and JSmol</span></a>.</p>
+<p>If you are entering your coordinate data by providing a SMILES string, please see <a class="reference internal" href="#using-smiles"><span class="std std-ref">Using SMILES</span></a>.</p>
+<p>If you are uploading a PDB file, click browse, and choose the file from your device.</p>
+<a class="reference internal image-reference" href="../_images/submit_browse.png"><img alt="../_images/submit_browse.png" src="../_images/submit_browse.png" style="width: 80%;" />
+</a>
+<p>You can also simply copy and paste the contents of the PDB into &quot;Paste PDB” input box.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ALL the HYDROGEN atoms must be included when providing coordinate data.</p>
+</div>
+<p>Once you have input the charge of your molecule and the coordinate data, click the next button. A new page containing a preview of the molecule that you wish to submit will be loaded. If the coordinate data matches that of a molecule within the database you will be informed by a red message that states ‘Your submission was within 0.1 Å RMSD of an existing structure within our database (molecule with same InChI key and net charge)’.</p>
+<a class="reference internal image-reference" href="../_images/submission_preview_match_found.png"><img alt="../_images/submission_preview_match_found.png" src="../_images/submission_preview_match_found.png" style="width: 80%;" />
+</a>
+<p>The molecules within the ATB database that match your submission will appear beneath this message. You may view the information page of the matching molecule by clicking &quot;Show Molecule Page”.</p>
+<a class="reference internal image-reference" href="../_images/submission_preview_matches.png"><img alt="../_images/submission_preview_matches.png" src="../_images/submission_preview_matches.png" style="width: 80%;" />
+</a>
+<p>If you would like to submit your version of the molecule, refer to the FAQ.</p>
+<p>If the molecule is not within the ATB database a button that allows you to submit the molecule for processing will appear.</p>
+<a class="reference internal image-reference" href="../_images/submission_preview_no_matches.png"><img alt="../_images/submission_preview_no_matches.png" src="../_images/submission_preview_no_matches.png" style="width: 80%;" />
+</a>
+<p>Once, you click &quot;Submit this Molecule” you will be sent periodic emails informing you of the progress of your submission. Once the topology of the molecule has finished being calculated, you will be able to view your submitted molecule by clicking on your profile name in the navigation menu and then selecting submitted molecules.</p>
+<a class="reference internal image-reference" href="../_images/navigation_submitted_molecules.png"><img alt="../_images/navigation_submitted_molecules.png" src="../_images/navigation_submitted_molecules.png" style="width: 80%;" />
+</a>
+<p>If you click on the Molid of you molecule you will be able to view its information.</p>
+<a class="reference internal image-reference" href="../_images/submitted_molecules_page.png"><img alt="../_images/submitted_molecules_page.png" src="../_images/submitted_molecules_page.png" style="width: 80%;" />
+</a>
+</section>
+<section id="using-jsme-and-jsmol">
+<span id="id1"></span><h2>Using JSME and JSmol<a class="headerlink" href="#using-jsme-and-jsmol" title="Link to this heading"></a></h2>
+<p>If you decide to use JSME and JSmol to submit the molecule, click the &quot;Draw/Modify with JSME and JSmol” button. A new window that contains JSME, JSmol and a SMILES input box will open.</p>
+<a class="reference internal image-reference" href="../_images/JSME_and_SMILES_window.png"><img alt="../_images/JSME_and_SMILES_window.png" src="../_images/JSME_and_SMILES_window.png" style="width: 80%;" />
+</a>
+<p>You can use the JSME to draw molecule a from scratch</p>
+<a class="reference internal image-reference" href="../_images/JSME_blank.png"><img alt="../_images/JSME_blank.png" src="../_images/JSME_blank.png" style="width: 40%;" />
+</a>
+<p>or you can import a molecule into the JSME molecular editor and modify it.</p>
+<a class="reference internal image-reference" href="../_images/import_JSME_input_box.png"><img alt="../_images/import_JSME_input_box.png" src="../_images/import_JSME_input_box.png" style="width: 80%;" />
+</a>
+<p>The first way to do this is to import a molecule from the ATB database. This can be doen by inputting either the chemical formula of the molecule, the name of the molecule, or the ID of the molecule in the ATB database into the &quot;Molecule Info” input box and clicking search. The matches found in the ATB database will be loaded below the ‘Molecule Info’ input box.</p>
+<a class="reference internal image-reference" href="../_images/import_JSME_matches.png"><img alt="../_images/import_JSME_matches.png" src="../_images/import_JSME_matches.png" style="width: 80%;" />
+</a>
+<p>You can load a line structure of your desired molecule into JSME by simply clicking on correct match.</p>
+<p>The second way is to  upload a PDB coordinate file from your computer and then click &quot;Load”.</p>
+<a class="reference internal image-reference" href="../_images/import_JSME_upload_PDB.png"><img alt="../_images/import_JSME_upload_PDB.png" src="../_images/import_JSME_upload_PDB.png" style="width: 80%;" />
+</a>
+<p>A line structure of your molecule will be loaded into JSME.</p>
+<a class="reference internal image-reference" href="../_images/JSME_benzene.png"><img alt="../_images/JSME_benzene.png" src="../_images/JSME_benzene.png" style="width: 80%;" />
+</a>
+<p>Once the desired line structure has been drawn, click &quot;Translate 2D structure/SMILES to 3D structure”. You will be able to view your molecule in 3D using JSmol.</p>
+<a class="reference internal image-reference" href="../_images/JSmol_benzene.png"><img alt="../_images/JSmol_benzene.png" src="../_images/JSmol_benzene.png" style="width: 80%;" />
+</a>
+<p>If you are happy with your molecule, click &quot;Transfer to submit page”. You will be returned to the molecule submission page with the PDB coordinates pasted in the designated input box.</p>
+<a class="reference internal image-reference" href="../_images/filled_PDB_input_box.png"><img alt="../_images/filled_PDB_input_box.png" src="../_images/filled_PDB_input_box.png" style="width: 80%;" />
+</a>
+</section>
+<section id="using-smiles">
+<span id="id2"></span><h2>Using SMILES<a class="headerlink" href="#using-smiles" title="Link to this heading"></a></h2>
+<p>If you decide to use SMILES to submit the molecule, click the &quot;Provide SMILES” button. A new window that contains JSME, JSmol and a SMILES input box will open.</p>
+<p>The input box where you type the SMILES string is to the right side of the JSME molecular editor.</p>
+<a class="reference internal image-reference" href="../_images/SMILES_input_box.png"><img alt="../_images/SMILES_input_box.png" src="../_images/SMILES_input_box.png" style="width: 40%;" />
+</a>
+<p>Type the SMILES string of your molecule into the input box.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Positive charges in the SMILES string must be assigned to an atom group via []. e.g., cc[c+]</p>
+</div>
+<p>Click &quot;Translate 2D structure/SMILES to 3D structure”. You will able to view your molecule in 3D using JSmol.</p>
+<a class="reference internal image-reference" href="../_images/JSmol_benzene.png"><img alt="../_images/JSmol_benzene.png" src="../_images/JSmol_benzene.png" style="width: 80%;" />
+</a>
+<p>If you are happy with your molecule, click &quot;Transfer to submit page”. You will be returned to the molecule submission page with the PDB coordinates pasted in the designated input box.</p>
+<a class="reference internal image-reference" href="../_images/filled_PDB_input_box.png"><img alt="../_images/filled_PDB_input_box.png" src="../_images/filled_PDB_input_box.png" style="width: 80%;" />
+</a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="searching_molecules.html" class="btn btn-neutral float-left" title="Searching for Molecules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="downloading_files.html" class="btn btn-neutral float-right" title="Downloading Outputs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, ATB.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
